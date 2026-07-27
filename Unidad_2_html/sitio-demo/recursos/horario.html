@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Horario de clases del sitio-demo">
+    <meta name="Keywords" content="horario,clases,sitio-demo">
+    <meta name="author content"Valery shanay Mora Acevedo">
+    <title>Document</title>
+</head>
+<>
+    <h1>Horario y Guia del cursos</h1>
+
+    <!--Lista desordenada-->
+    <h2>Materiales del curso</h2>
+    <ul type="square">
+        <!--Type de los ul: square,circle,disc-->
+        <li>Visual studio code</li>
+        <li>Cuenta de Github</li>
+        <li>Cuaderno de bitácora</li>
+        <li>Computadora con conexion a internet</li>
+    </ul>
+    <!--Emmet: ul>li*3-->
+
+    <hr><br>
+    <!--Lista ordenada-->
+    <h2>Como entregar una practica</h2>
+    <!--Emmet: ol>li*8-->
+    <ol type="1">
+        <li>Traer lo cambios con git pull</li>
+        <li>Crear una rama para la practica con git switch -c "nombre de la rama"</li>
+        <li>Trabajar y hacer un commit atómicos</li>
+        <li>Subir la rama con git push</li>
+        <li>Abrir un pull request en Github</li>
+        <li>Revisar y fusionar la rama princupal (main)</li>
+        <li>Eliminar la rama de la practica con git branch -d "nombre de la rama"</li>
+    </ol>
+    <br><hr>
+
+     <!--Algunos atrubutos probados en vivo-->
+     <!--<ol reversed, type= "A", type="1", type="I", type="a"-->
+
+
+     <!--Listas descriptivas: pares de términos y descripción-->
+     <h2>Glosario Git con listas de descriptivas</h2>
+     <!--Emmet: -dl>(dt+dd)*3-->
+     <dl>
+        <dt>Commit</dt>
+        <dd>Instantánea permanente del proyecto</dd>
+        <dt>Rama</dt>
+        <dd>Línea de trabajo paralela que no afecta a main o rama principal</dd>
+        <dt>Pull</dt>
+        <dd>Solicitud de revisión para incorporar la rama</dd>
+     </dl>
+     <hr><br>
+     <!--Lista anidada, usanda en menús y submenús-->
+     <h2>Temario de la unidad: con lista animada</h2>
+     <!--Emmet: ul>li>ul>li*2-->
+     <ul><li>Estructura de documento
+          <ul>
+            <li>DOCTYPE Y HTML</li>
+            <li>Head y Metadatos</li>
+          </ul>
+    </li>
+</ul>
+
+
+<ul><li>Contenido
+        <ul>
+            <li>Texto y enlaces</li>
+            <li>Listas y tablas</li>
+        </ul>
+ </li>
+ 
+ <hr>
+ <br>
+
+ <!--Esqueleto Tabla-->
+ <h2>Tabla de Horario</h2>
+ <tabla border="1">
+  <caption>Horario de Clases y Activiades</caption>
+  <thead>
+    <tr>
+        <th scope="col">Dia</th>
+         <th scope="col">Modalidad</th>
+          <th scope="col">Horario</th>
+          <th scope="col">Contenido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Lunes</td>
+        <td>Presencial</td>
+        <td>1:30pm a 5:30 pm</td>
+        <td>Litas y Tablas</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+        <td colspan="4" align="center">Total semanal</td>
+    </tr>
+  </tfoot>
+  <!--table>caption+thead>th*4^^tbody-->
+  
+</body>
+</html>
