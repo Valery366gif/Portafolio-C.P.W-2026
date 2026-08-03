@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Valery Shanay Mora Acevedo">
+  <meta name="description" content="Inscríbete en nuestros talleres o solicita asesoría para tu huerto urbano.">
+  <meta name="keywords" content="contacto, talleres huerto, inscripcion, formulario, Valery Mora">
+  <title>Contacto | EcoHuerto Urbano</title>
+  <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <header id="cabecera-principal">
+    <h1>EcoHuerto Urbano</h1>
+    <p>Cultivando alimentos saludables y sostenibilidad en espacios reducidos.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="listas.html">Cultivos y Guías</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="insignia.html">Insignia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <h2>Solicitud de Asesoría y Registro</h2>
+
+    <form action="#" method="post">
+      
+      <!-- Grupo 1: Datos Personales -->
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <p>
+          <label for="campo-nombre">Nombre completo:</label>
+          <input type="text" id="campo-nombre" name="nombre_usuario" minlength="3" maxlength="40" required>
+        </p>
+
+        <p>
+          <label for="campo-correo">Correo electrónico:</label>
+          <input type="email" id="campo-correo" name="correo_usuario" required>
+        </p>
+
+        <p>
+          <label for="campo-telefono">Teléfono de contacto (8 dígitos):</label>
+          <input type="tel" id="campo-telefono" name="telefono_usuario" pattern="[0-9]{8}" title="Ingrese exactamente 8 dígitos numéricos sin espacios ni guiones" required>
+        </p>
+
+        <p>
+          <label for="campo-clave">Contraseña para cuenta de la plataforma:</label>
+          <input type="password" id="campo-clave" name="clave_acceso" required>
+        </p>
+      </fieldset>
+
+      <!-- Grupo 2: Detalles de la Solicitud -->
+      <fieldset>
+        <legend>Detalles de la Solicitud</legend>
+
+        <p>
+          <label for="campo-fecha">Fecha estimada para la visita o taller:</label>
+          <input type="date" id="campo-fecha" name="fecha_taller">
+        </p>
+
+        <p>
+          <label for="campo-espacio">Área disponible para el huerto (en metros cuadrados):</label>
+          <input type="number" id="campo-espacio" name="area_m2" min="1" max="100" step="1">
+        </p>
+
+        <p>
+          <span>Tipo de Asesoría Requerida:</span><br>
+          <input type="radio" id="tipo-balcon" name="tipo_asesoria" value="balcon" checked>
+          <label for="tipo-balcon">Huerto en Balcón o Macetas</label>
+
+          <input type="radio" id="tipo-jardin" name="tipo_asesoria" value="jardin">
+          <label for="tipo-jardin">Huerto en Jardín o Suelo</label>
+        </p>
+
+        <p>
+          <label for="campo-mensaje">Describa sus intereses o dudas sobre el cultivo (máximo 250 caracteres):</label><br>
+          <textarea id="campo-mensaje" name="mensaje_consulta" rows="4" cols="45" maxlength="250"></textarea>
+        </p>
+      </fieldset>
+
+      <!-- Grupo 3: Confirmación -->
+      <fieldset>
+        <legend>Confirmación</legend>
+
+        <p>
+          <input type="checkbox" id="campo-terminos" name="acepta_terminos" required>
+          <label for="campo-terminos">Acepto los términos del servicio y envío de boletines agroecológicos.</label>
+        </p>
+
+        <button type="submit">Enviar Solicitud</button>
+        <button type="reset">Limpiar Formulario</button>
+      </fieldset>
+
+    </form>
+  </main>
+        <p><a href="#inicio">Volver al inicio</a></p>
+
+  <!-- Pie de Página guiador INA -->
+  <footer id="pie-pagina">
+    <address>
+      <p>Consultas sobre talleres: <a href="mailto:info@ecohuertourbano.or">info@ecohuertourbano.or</a></p>
+    </address>
+    <p><small>&copy; 2026 EcoHuerto Urbano. Todos los derechos reservados.</small></p>
+  </footer>
+
+</body>
+</html>
