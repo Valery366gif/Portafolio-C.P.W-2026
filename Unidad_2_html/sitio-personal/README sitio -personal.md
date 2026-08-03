@@ -12,8 +12,7 @@ Proyecto propio construido de forma autónoma.[cite: 1]
 (recursos/imgindex.html.png)[cite: 1] |
 
 | `listas.html` | Las tres listas, lista anidada y tabla con celdas combinadas[cite: 1] | S05[cite: 1] | [ver]
-(Unidad_02_html/listas.html)[cite: 1] | [ver]
-(recursos/imglistas.html.png)[cite: 1] |
+(Unidad_02_html/listas.html)[cite: 1] | [ver](recursos/imglistas.html.png)[cite: 1] |
 
 | `contacto.html` | Formulario con ocho campos y validación de HTML[cite: 1] | S06[cite: 1] | [ver]
 (Unidad_02_html/sitio-personal/contacto.html)[cite: 1] | [ver]
@@ -29,7 +28,7 @@ Proyecto propio construido de forma autónoma.[cite: 1]
 |:---------|:----------|:--------|
 | Tema del sitio | EcoHuerto Urbano[cite: 1] | Para promover la agricultura sostenible y el cultivo de alimentos en la ciudad[cite: 1] |
 | Atributo de la lista ordenada | `type="1"` y `start`[cite: 1] | Para llevar un orden cronológico adecuado en las actividades del huerto[cite: 1] |
-| Formatos de imagen usados | `.png` y `.jpg`[cite: 1] | Para mantener compatibilidad y buena nitidez en la galería[cite: 1] |
+| Formatos de imagen usados | `.jpg`[cite: 1] | Para mantener compatibilidad y buena nitidez en la galería[cite: 1] |
 | Formas del gráfico SVG | Círculos, líneas, polígonos y rutas (`path`)[cite: 1] | Para crear una insignia vectorial nítida con hoja, estrella y bordes dorados[cite: 1] |
 
 **Cómo se ve**[cite: 1]
