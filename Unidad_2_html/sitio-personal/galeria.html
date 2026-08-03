@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galería multimedia con fotografías, audios, videos explicativos y gráficas SVG sobre agricultura urbana.">
+  <meta name="keywords" content="galeria, huerto urbano, fotos, audio, video, svg, Valery Mora">
+  <meta name="author" content="Valery Shanay Mora Acevedo">
+  <title>Galería Multimedia | EcoHuerto Urbano</title>
+  <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+  <header id="cabecera-principal">
+    <h1>EcoHuerto Urbano</h1>
+    <p>Cultivando alimentos saludables y sostenibilidad en espacios reducidos.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="listas.html">Cultivos y Guías</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="galeria.html">Galería Multimedia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <h2>Evidencias Multimedia del Proyecto</h2>
+
+    <!-- HORA 5: Imágenes -->
+    <section id="galeria-fotografica">
+      <h3>Fotografías del Huerto</h3>
+
+      <!-- Imagen simple -->
+      <p>
+        <img src="recursos/huertos-Urbanos.jpg" alt="Macetas con una buena planta de tomates" width="400" height="260">
+         <figcaption>Macetas con una buena planta de tomates en fase de producción óptima.</figcaption>
+      </p>
+
+      <!-- Imagen agrupada con pie -->
+      <figure>
+        <img src="recursos/huerto urbano2.jpg" alt="Lechuca en una planta de huerto urbano" width="400" height="260">
+        <figcaption>Lechuca en una planta de huerto urbano.</figcaption>
+      </figure>
+
+      <!-- Imagen adaptativa con varios formatos -->
+      <picture>
+        <source srcset="recursos/huertos-Urbanos3.jpg" type="image/webp">
+        <img src="recursos/huertos-Urbanos3.jpg" alt="Sistema de riego por goteo casero sobre hortalizas" width="400" height="260">
+      </picture>
+    </section>
+
+    <!-- HORA 5: Audio -->
+    <section id="audio-guia">
+      <h3>Audioguía: Cómo regar el huerto urbano</h3>
+      <audio controls preload="metadata">
+        <source src="recursos/Cómo regar el huerto urbano.mp3" type="audio/mpeg">
+        <source src="recursos/Cómo regar el huerto urbano.ogg" type="audio/ogg">
+        Su navegador no soporta el elemento de audio. Puede <a href="recursos/Cómo regar el huerto urbano.mp3">descargar la audioguía aquí</a>.
+      </audio>
+    </section>
+
+    <!-- HORA 5: Video -->
+    <section id="video-tutorial">
+      <h3>Taller en Video: 10 Consejos más importantes para comenzar desde cero</h3>
+      <video controls width="480" poster="recursos/portada-video.jpg" preload="auto">
+        <source src="recursos/10 consejos.mp4" type="video/mp4">
+        <source src="recursos/10 consejos.webm" type="video/webm">
+        <track src="recursos/subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+        Su navegador no admite la reproducción de video HTML5. Puede <a href="recursos/10 consejos.mp4">descargar el tutorial aquí</a>.
+      </video>
+    </section>
+
+    <!-- HORA 6: Gráfica Vectorial SVG -->
+    <section id="grafico-vectorial">
+      <h3>Esquema Vectorial: Zonas de una Planta</h3>
+      
+      <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- Lienzo / Fondo con marco -->
+        <rect x="5" y="5" width="310" height="210" rx="10" fill="#f4f9f4" stroke="#2e7d32" stroke-width="2" />
+        
+        <!-- Maceta (Polígono) -->
+        <polygon points="110,180 210,180 225,120 95,120" fill="#a16207" stroke="#78350f" stroke-width="2" />
+        
+        <!-- Tallo (Línea) -->
+        <line x1="160" y1="120" x2="160" y2="40" stroke="#15803d" stroke-width="4" />
+        
+        <!-- Hoja (Círculo/Elipse estilizado) -->
+        <circle cx="130" cy="70" r="22" fill="#22c55e" stroke="#15803d" stroke-width="2" />
+        <circle cx="190" cy="55" r="22" fill="#22c55e" stroke="#15803d" stroke-width="2" />
+        
+        <!-- Texto explicativo interno -->
+        <text x="160" y="200" text-anchor="middle" font-size="12" fill="#1e293b">Figura Vectorial: Estructura de Siembra</text>
+      </svg>
+
+      <p>Este diagrama SVG representa la distribución básica de la maceta y el tallo foliar mediante figuras vectoriales compuestas.</p>
+    </section>
+  </main>
+
+  <!-- Pie de Página guiador INA -->
+  <footer id="pie-pagina">
+    <address>
+      <p>Consultas sobre talleres: <a href="mailto:info@ecohuerto.or">info@ecohuerto.or</a></p>
+    </address>
+    <p><small>&copy; 2026 EcoHuerto Urbano. Todos los derechos reservados.</small></p>
+  </footer>
+
+</body>
+</html>
