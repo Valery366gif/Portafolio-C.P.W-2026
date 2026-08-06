@@ -1,0 +1,16 @@
+/*css/estilos.css*/
+/*Reset Basico*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*esta regla elimina los márgenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en las dimensiones del elemento*/
+}
+body {
+    font-family: Arial, sans-serif; color: #241350;
+    background-color:#f5f5f5;
+    /*esta regla define La fuenete y el color del texto para todo el cuerpo de la página web*/
+}
+   h1{color:#1f4e79; font-size:32px;text-align:center}
+
+
