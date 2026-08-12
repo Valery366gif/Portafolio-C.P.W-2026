@@ -1,132 +1,294 @@
 /*css/estilos.css*/
-/* Reset básico*/
-/*El 100% del tamaño que el usuario configuro
-por omisiòn son 16px, */
+/* Reset basico a todo*/
+/*100% del tamaño que el usuario configuro. Por imision son 16px, */
 html{
     font-size: 100%;
 }
 
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}/*Esta regla elimina los margenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y el alto del elemento*/
+
+
 
 body {
     font-size: 1rem;
     line-height: 1.6;
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
     background-color: #fcfcfc;
-} /*esta regla define la fuente y el color del texto en el cuerpo del documento*/
-h1{
-    color:#00aa22;
+    padding-top: 200px;
+}/*esta regla define la fuente y el color de texto del documento*/
+
+h1  {
+    color: #f2f3f5;
     text-align: center;
-}
-h1{
     font-size: 2.5rem;
     font-weight: 700;
 }
+
 h2{
     font-size: 2rem;
     font-weight: 700;
 }
+
 h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
 }
+
 p{
     font-size: 1rem;
     font-weight: 400;
-}
-header{
-    background-color: #111213;
-    color: white;
-}
-footer{
-    background-color: #a7e4ce;
-    padding: 20px;
-    margin-top: 32px;
-}
-.portada-texto{
-    background-color: rgba(0, 0, 0, 0.35);
-    padding: 24px;
-    border-radius: 8px;
+    margin-bottom: 16px;
 }
 
 h2, h3{
-    color: hsl(162, 31%, 21%);
+    color: #1F4E79;
+    margin-bottom: 12px;
+}
+
+header{
+    background-color: #1F4E79;
+    color: white;
+
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    /*0 aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por igaul a ambos lados lo centra en un elemnento con ancho limitado*/
+}
+
+
+footer{
+    background-color: #dce6f1;
+    padding: 20px;
+    margin-top: 32px;
+}
+
+.portada-texto{
+    background-color:rgba(221, 38, 38, 35);
+    padding: 24px;
+    border-radius: 10px;
 }
 
 main p{
     max-width: 70ch;
-}/*ch es el ancho del caracter cero de la fuente en uso, el valor de 70 marca el rango de lectura cómoda por linea o renglón. más larga, la vista se pierde al cambio de linea*/
-
+    /*ch es el ancho del caracter cero de la fuente en uso. el valor 70 marca el rango de lectura comoda por linea o reglon. mas larga, la vista se pierde al cambio de linea*/
+}
+/*transformacion y espacio*/
 main a{
     text-decoration: none;
-    border-bottom: 1px solid #1f4e79;
+    border-bottom: 1px solid #1F4E79;
 }
 
-blockquote{
+blockquote p{
     font-style: italic;
     color: #555;
 }
 
-/*Transformación y espacio*/
 
-header nav a {
+header nav a{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;/*Pone en linea elementos*/
+    padding: 10px 15px;
+}
+header nav ul{
+    list-style-type: none;
 }
 
-/*Aplicar estilos a clases*/
+nav li{
+    display: inline-block;
+    margin-right: 15px;
+    /*visibility: hidden; Oculta pero se puede interactuar con el*/
+}
+
+/*main nav{
+    display: none;
+} Esta propiedad desaparece el elemento*/
+
+header nav li{
+    display: inline-block;
+}
+/*Colocca las opciones de menu en linea, uno al lado de otro*/
+
+
 .destacado{
     background-color: #fff3cd;
-    padding: 10px; /*aplica como las manesillas del reloj: arriba-derecha-abajo-izquierda*/
+    padding: 10px 20px;
 }
 
-/*Aplicar estilos a identificadores  o IDs*/
-#inicio{
-    background-image: url(../Recursos/fondo1.jpg);
-    background-size: cover;
+
+/*Trabajando con id*/
+
+#inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../recursos/fondo1.jpg);
+    padding: 30px;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px;
+    background-size: cover;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    z-index: 100;/*cunato mayor es el nuemro mas alfrente va a estar pasando por encima de todo lo demas*/  
 }
 
-/*Aplicar estilos a identificadores  o IDs*/
-nav a{
-    color: #ffff;
+/*#inicio {
+    position: sticky; fluye normal al pricio y se pega al llegar arriba
+    top: 0;
+}*/
+
+/*estilos a solo enlaces dentro del nav*/
+
+nav a {
+    color: #fff;
     margin-right: 15px;
-    transition: color 0.3s; /*cambio suave */
+    transition: color 0.3s;/*Cambio suave*/
 }
-
-/*Pseudo-clase :hover*/
+/*pseudo clase :hover*/
 nav a:hover {
-    color: #f8cbad; /*al pasar el cursor*/
+    color: #f8cbad; /* al pasar el cursor*/
 }
-
-/*Pseudo-clase :nth-child: filas cebra en la tabla*/
-tbody tr :nth-child(even){
-    background-color: #7c9f92;
+/* pseudo clasen _nth-child: filas cebra en la tabla*/
+tbody tr:nth-child(even){
+    background-color: #9ac498;
 }
-
-/*Pseudo-elemento ::firts-letter y ::selection*/
-article p::first-letter{
+/*pseudo elemento ::first-letter y ::selection*/
+article p::first-letter {
     font-size: 32px;
     font-weight: bold;
-    color: #c0d4c1;
-}
+    color: #c55a11;
 
-::selection{
-    background-color: #1f4e79;
-    color: white;
 }
-
-/*Agregar familia de fuentes traida de google fonts*/
-body{
-    font-family: "Poppins",Arial, Helvetica, sans-serif;
+::selection {
+    background-color:#1F4E79;
+    color:white;
+}
+/*Agregar familia de fuentes de google fonts*/
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1.6;
+} 
+
+aside{
+    padding: 20px;
+    border: 2px solid #c55a11;
+    border-radius: 8px;
+
 }
+/*En este caso el padding aplica a los cuatro lados a la vez padding: 10px 20px aplica vertical y horizontal
+padding: 10px 20px 15px 5px aplica a los 4 lados valores distintos En el sentido de las manillas del reloj*/
+
+/*Aplicar lado po lado
+padding-top 10 aplica arriba
+padding-right 10px aplica derecha
+padding-bottom 10px aplica abajo
+padding-left 10px aplica izquierda*/
+
+/*Aplicamos a la tabla horario.html*/
+
+th, td{
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+thead th{
+    background-color: #1F4E79;
+    color: white;
+    /*Trabaja encabezados de la tabla*/
+}
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
+}
+
+fieldset{
+    padding: 16px;
+}
+
+section{
+    margin-bottom: 32px;
+}
+
+/*Listas de horario.html*/
+main ul, main ol{
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+main li {
+    margin-bottom: 6px;
+}
+
+/*Lista descriptiva*/
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-top: 8px;
+}
+/*La sangria de dd es lo que hace visible l arelacion entre el termino y su descripcion*/
+
+/*La tabla de calendario*/
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+caption{
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+figure {
+      border: 1px solid #dddddd; 
+      border-radius: 6px;
+      padding: 12px;
+         
+}
+
+/*Los cinco valores de position
+static: valor por omision
+relative: se desplaza de su propia posicion
+conserva: su propia posicion y los elementos vecinos no se mueven
+absolute: se ubica respecto al ancestro mas cercano
+fixed: se ubica con respecto a la ventana, no se mueve al desplazarce
+sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
+
+.figura destacada{
+    position: relative;/*posiciona al padre y este no se mueve. Es referencia de hijos absolutos*/
+    /*galeria*/
+}
+.etiqueta {
+    position: absolute;
+    top: 20px;
+    background-color: #c55a11;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.87rem;
+    z-index: 10;
+}
+/*z-index solo funciona en elemetos que tengan un position declarados
+si el elemento es static por defecto no funciona
+escala de valores de z-index
+10:para elemtos posiscionados dentro del contenido
+100: la cabecera fija
+1000:ventanas emergentes y capas superpuestas
+9999:no hace falta usarlo casi nunca porque no deja margen a otro valor por encima*/

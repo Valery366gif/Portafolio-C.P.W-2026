@@ -18,6 +18,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     color:#333;
     background-color: #fcfcfc;
+    padding-top: 200px;
 }/*esta regla define la fuente y el color de texto del documento*/
 
 h1  {
@@ -89,6 +90,7 @@ blockquote p{
     color: #555;
 }
 
+
 header nav a{
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -126,6 +128,10 @@ header nav li{
 /*Trabajando con id*/
 
 #inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url(../recursos/fondo.1.jpg);
     padding: 30px;
     background-position: center;
@@ -133,8 +139,13 @@ header nav li{
     background-size: cover;
     border: 1px solid #000000;
     border-radius: 10px;
-    
+    z-index: 100;/*cunato mayor es el nuemro mas alfrente va a estar pasando por encima de todo lo demas*/  
 }
+
+/*#inicio {
+    position: sticky; fluye normal al pricio y se pega al llegar arriba
+    top: 0;
+}*/
 
 /*estilos a solo enlaces dentro del nav*/
 
@@ -255,9 +266,29 @@ figure {
 
 /*Los cinco valores de position
 static: valor por omision
-relative: se desplaza de su propia posicion, conserva su propia posicion y los elementos vecinos no se mueven
+relative: se desplaza de su propia posicion
+conserva: su propia posicion y los elementos vecinos no se mueven
 absolute: se ubica respecto al ancestro mas cercano
 fixed: se ubica con respecto a la ventana, no se mueve al desplazarce
 sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
 
-/*Patron para este caso*/
+.figura destacada{
+    position: relative;/*posiciona al padre y este no se mueve. Es referencia de hijos absolutos*/
+    /*galeria*/
+}
+.etiqueta {
+    position: absolute;
+    top: 20px;
+    background-color: #c55a11;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.87rem;
+    z-index: 10;
+}
+/*z-index solo funciona en elemetos que tengan un position declarados
+si el elemento es static por defecto no funciona
+escala de valores de z-index
+10:para elemtos posiscionados dentro del contenido
+100: la cabecera fija
+1000:ventanas emergentes y capas superpuestas
+9999:no hace falta usarlo casi nunca porque no deja margen a otro valor por encima*/
