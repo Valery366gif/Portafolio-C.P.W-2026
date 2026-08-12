@@ -57,6 +57,7 @@ header{
 .contenedor{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 25px;
     /*0 aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por igaul a ambos lados lo centra en un elemnento con ancho limitado*/
 }
 
@@ -101,6 +102,7 @@ header nav ul{
 }
 
 nav li{
+    display: inline-block;
     margin-right: 15px;
     /*visibility: hidden; Oculta pero se puede interactuar con el*/
 }
@@ -244,6 +246,12 @@ caption{
     font-weight: 700;
     margin-bottom: 24px;
 }
+figure {
+      border: 1px solid #dddddd; 
+      border-radius: 6px;
+      padding: 12px;
+         
+}
 
 /*Los cinco valores de position
 static: valor por omision
@@ -253,6 +261,3 @@ fixed: se ubica con respecto a la ventana, no se mueve al desplazarce
 sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
 
 /*Patron para este caso*/
-.figura-destacada{
-    
-}
