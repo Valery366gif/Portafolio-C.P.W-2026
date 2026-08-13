@@ -63,19 +63,20 @@ repositorios locales y remotos en GitHub.                        | [ver](unidad-
 | Sesión | Tema                           | Qué aprendí                                                              |      Trabajo      |     Captura      |
 | :----: | :----------------------------- | :----------------------------------------------------------------------  | :---------------: | :--------------: |
 |  S02   | Git colaborativo, la web y XML | Comandos de Git para flujo colaborativo (`clone`, `pull`, ramificación), | [ver](unidad-02/) | [ver](recursos/) |
-historia de la web y estructura básica de XML. 
+|                                         |  historia de la web y estructura básica de XML.                          | 
 |  S03   | Estructura del documento HTML5 | Estructura global de un documento HTML5 (`<!DOCTYPE>`, `<html>`, `<head> | [ver](unidad-02/) | [ver](recursos/) |
-`, `<body>`) y metadatos esenciales.      
+|                                         | `, `<body>`) y metadatos esenciales.                                     |     
 |  S04   | Texto, enlaces y anclas        | Etiquetas de encabezado, párrafos, formato de texto, hipervínculos       | [ver](unidad-02/) | [ver](recursos/) |
-relativos y absolutos, y navegación con anclas. 
+|                                         | relativos y absolutos, y navegación con anclas.                          | 
 |  S05   | Listas y tablas                | Creación de listas ordenadas, desordenadas y de descripción, junto con   | [ver](unidad-02/) | [ver](recursos/) |
-el marcado de tablas(`<thead>,<tbody>,<tr>,<td>,<th>`). 
+|                                         | el marcado de tablas(`<thead>,<tbody>,<tr>,<td>,<th>`).validaciones      | 
 |  S06   | Formularios y semántica        | Controles de entrada de formularios (`<input>.<select>,<textarea>`),     | [ver](unidad-02/) | [ver](recursos/) |
-validaciones nativas y etiquetas semánticas (`<header>, `<nav>`, `<main>`, `<article>`, `<footer>`). 
+|                                         | validaciones nativas y etiquetas semánticas                              |
+|                                         | (`<header>, `<nav>`, `<main>`, `<article>`, `<footer>`)
 |  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](unidad-02/) | [ver](recursos/) |
-imágenes incrustadas con buenas prácticas de accesibilidad.
+|                                         |imágenes incrustadas con buenas prácticas de accesibilidad.               |
 |  S08   | SVG y repaso                   | Incorporación y manipulación de gráficos vectoriales SVG dentro de la    | [ver](unidad-02/) | [ver](recursos/) |
-estructura HTML y repaso general de la unidad. 
+|                                         |estructura HTML y repaso general de la unidad.                            |
 
 </details>
 
@@ -85,15 +86,15 @@ estructura HTML y repaso general de la unidad.
 | Sesión | Tema                       | Qué aprendí                                                                               | Trabajo           |     Captura      |
 | :----: | :------------------------- | :---------------------------------------------------------------------------------------- | :---------------: | :--------------: |
 |  S11   | Introducción a CSS | Sintaxis básica de CSSmétodos para vincular hojas de estilo (`<link>`, interno e inline) y        | [ver](unidad-03/) | [ver](recursos/) |
-concepto de cascada y especificidad.
+|                             |concepto de cascada y especificidad.                                                               |
 |  S12   | Selectores y pseudo-clases | Selectores básicos (etiqueta, clase, ID), combinadores y pseudo-clases para estados       | [ver](unidad-03/) | [ver](recursos/) |
-interactivos (`:hover`, `:focus`, `:active`). 
-|  S13   | Tipografía y color         | Aplicación de fuentes web (Google Fonts), jerarquía tipográfica, propiedades de texto y   | [ver](unidad-03/) | [ver](recursos/) |
- formatos de color (HEX, RGB, HSL). 
+|                                     |interactivos (`:hover`, `:focus`, `:active`).                                              |
+|  S13   | Tipografía y color         |Aplicación de fuentes web (Google Fonts), jerarquía tipográfica, propiedades de texto y   | [ver](unidad-03/) | [ver](recursos/) |
+|                                     |formatos de color (HEX, RGB, HSL). 
 |  S14   | Modelo de cajas            | Control de `content`, `padding`, `border`, `margin` y uso de `box-sizing: border-box`     | [ver](unidad-03/) | [ver](recursos/) |
-par el cálculo correcto de dimensiones. 
+|                                     |par el cálculo correcto de dimensiones. 
 |  S15   | Display y posicionamiento  | Comportamiento de flujo (`block,inline,inline-block,none`) y esquemas de posicionamiento  | [ver](unidad-03/)|  [ver](recursos/) |
-(`static,relative,absolute, fixed,sticky`). 
+|                                     |(`static,relative,absolute, fixed,sticky`). 
 |  S16   | Flexbox                    |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
 |  S17   | CSS Grid                   |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
