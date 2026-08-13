@@ -51,9 +51,10 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema         | Qué aprendí                            |      Trabajo      |     Captura      |
 | :----: | :----------- | :------------------------------------- | :---------------: | :--------------: |
-|  S01   | Git y GitHub | Fundamentos de control de versiones,   
-comandos esenciales (`init,add,commit,push`) y configuración de 
-repositorios locales y remotos en GitHub.                        | [ver](unidad-01/) | [ver](recursos/) |
+|  S01   | Git y GitHub | Fundamentos de control de versiones,   | [ver](unidad-01/) | [ver](recursos/) | 
+|        |              |comandos esenciales (`init,add,commit   |                                      | 
+|        |              |push`) y configuración de repositorios  |                                      |
+|        |              |locales y remotos en GitHub.            |                                      |            
 
 </details>
 
@@ -76,7 +77,7 @@ repositorios locales y remotos en GitHub.                        | [ver](unidad-
 |  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                |imágenes incrustadas con buenas prácticas de accesibilidad.               |
 |  S08   | SVG y repaso                   | Incorporación y manipulación de gráficos vectoriales SVG dentro de la    | [ver](unidad-02/) | [ver](recursos/) |
-|                                         |estructura HTML y repaso general de la unidad.                            |
+|        |                                |estructura HTML y repaso general de la unidad.                            |                                      |
 
 </details>
 

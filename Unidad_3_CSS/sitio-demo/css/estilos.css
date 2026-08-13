@@ -100,6 +100,7 @@ header nav a{
     padding: 10px 15px;
 }
 header nav ul{
+    display: flex;
     list-style-type: none;
 }
 
@@ -113,9 +114,10 @@ nav li{
     display: none;
 } Esta propiedad desaparece el elemento*/
 
-header nav li{
-    display: inline-block;
-}
+/*header nav li{
+    /*display: inline-block;
+    margin-right: 15px;
+}*/
 /*Colocca las opciones de menu en linea, uno al lado de otro*/
 
 
@@ -272,7 +274,7 @@ absolute: se ubica respecto al ancestro mas cercano
 fixed: se ubica con respecto a la ventana, no se mueve al desplazarce
 sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
 
-.figura destacada{
+.figura-destacada{
     position: relative;/*posiciona al padre y este no se mueve. Es referencia de hijos absolutos*/
     /*galeria*/
 }
