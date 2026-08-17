@@ -65,16 +65,16 @@ Portafolio-Codificación de Páginas Web/
 | :----: | :----------------------------- | :----------------------------------------------------------------------  | :---------------: | :--------------: |
 |  S02   | Git colaborativo, la web y XML | Comandos de Git para flujo colaborativo (`clone`, `pull`, ramificación), | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                |  historia de la web y estructura básica de XML.                          | 
-|  S03   | Estructura del documento HTML5 | Estructura global de un documento HTML5 (`<!DOCTYPE>`, `<html>`, `<head> | [ver](unidad-02/) | [ver](recursos/) |
-|        |                                | `, `<body>`) y metadatos esenciales.                                     |     
+|  S03   | Estructura del documento HTML5 | Estructura global de un documento HTML5 (`<!DOCTYPE>`, `<html>`,         | [ver](unidad-02/) | [ver](recursos/) |
+|        |                                | `<head>`, `<body>`) y metadatos esenciales.                                     |     
 |  S04   | Texto, enlaces y anclas        | Etiquetas de encabezado, párrafos, formato de texto, hipervínculos       | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                | relativos y absolutos, y navegación con anclas.                          | 
 |  S05   | Listas y tablas                | Creación de listas ordenadas, desordenadas y de descripción, junto con   | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                | el marcado de tablas(`<thead>,<tbody>,<tr>,<td>,<th>`).validaciones      | 
 |  S06   | Formularios y semántica        | Controles de entrada de formularios (`<input>.<select>,<textarea>`),     | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                | validaciones nativas y etiquetas semánticas                              |
-|        |                                | (`<header>, `<nav>`, `<main>`, `<article>`, `<footer>`)                  |
-|  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](unidad-02/) | [ver](recursos/) |
+|        |                                | (`<header>, <nav>`, `<main>`, `<article>`, `<footer>`)                  |
+|  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](/Unidad_2_html/sitio-demo/galeria.html) | [ver](/Unidad_2_html/sitio-demo/recursos/evidencias.png) |
 |        |                                |imágenes incrustadas con buenas prácticas de accesibilidad.               |
 |  S08   | SVG y repaso                   | Incorporación y manipulación de gráficos vectoriales SVG dentro de la    | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                |estructura HTML y repaso general de la unidad.                            |                                      |
@@ -190,7 +190,7 @@ _(Escribir al cerrar el módulo. Tres preguntas para orientarla:)_
 
 <div align="center">
 
-**Nombre Completo** · correo@ejemplo.com
+**Nombre Completo** · Valery Shanay Mora Acevedo
 
 Portafolio elaborado durante el módulo CSTI12002 · Instituto Nacional de Aprendizaje · 2026
 
