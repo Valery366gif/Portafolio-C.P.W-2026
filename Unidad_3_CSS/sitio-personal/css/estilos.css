@@ -1,4 +1,4 @@
-/*css/estilos.css*/
+/*css/estilos.css sitio personal*/
 /* Reset basico a todo*/
 /*100% del tamaño que el usuario configuro. Por imision son 16px, */
 html{
@@ -8,7 +8,7 @@ html{
 * {margin: 0;
     padding: 0;
     box-sizing: border-box;
-}/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y el alto del elemento*/
+}
 
 
 
@@ -19,7 +19,7 @@ body {
     color:#333;
     background-color: #fcfcfc;
     padding-top: 200px;
-}/*esta regla define la fuente y el color de texto del documento*/
+}
 
 h1  {
     color: #f2f3f5;
@@ -59,7 +59,6 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     padding: 25px;
-    /*0 aplica a la parte vertical y horizontal el auto: reparte el espacio sobrante por igaul a ambos lados lo centra en un elemnento con ancho limitado*/
 }
 
 
@@ -77,9 +76,8 @@ footer{
 
 main p{
     max-width: 70ch;
-    /*ch es el ancho del caracter cero de la fuente en uso. el valor 70 marca el rango de lectura comoda por linea o reglon. mas larga, la vista se pierde al cambio de linea*/
 }
-/*transformacion y espacio*/
+
 main a{
     text-decoration: none;
     border-bottom: 1px solid #1F4E79;
@@ -96,7 +94,7 @@ header nav a{
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;/*Pone en linea elementos*/
+    display: inline-block;
     padding: 10px 15px;
 }
 header nav ul{
@@ -106,17 +104,13 @@ header nav ul{
 nav li{
     display: inline-block;
     margin-right: 15px;
-    /*visibility: hidden; Oculta pero se puede interactuar con el*/
 }
 
-/*main nav{
-    display: none;
-} Esta propiedad desaparece el elemento*/
 
 header nav li{
     display: inline-block;
 }
-/*Colocca las opciones de menu en linea, uno al lado de otro*/
+
 
 
 .destacado{
@@ -124,8 +118,6 @@ header nav li{
     padding: 10px 20px;
 }
 
-
-/*Trabajando con id*/
 
 #inicio {
     position: fixed;
@@ -139,30 +131,24 @@ header nav li{
     background-size: cover;
     border: 1px solid #000000;
     border-radius: 10px;
-    z-index: 100;/*cunato mayor es el nuemro mas alfrente va a estar pasando por encima de todo lo demas*/  
-}
+    z-index: 100;
 
-/*#inicio {
-    position: sticky; fluye normal al pricio y se pega al llegar arriba
-    top: 0;
-}*/
 
-/*estilos a solo enlaces dentro del nav*/
+
+
 
 nav a {
     color: #fff;
     margin-right: 15px;
     transition: color 0.3s;/*Cambio suave*/
 }
-/*pseudo clase :hover*/
+
 nav a:hover {
-    color: #f8cbad; /* al pasar el cursor*/
+    color: #f8cbad;
 }
-/* pseudo clasen _nth-child: filas cebra en la tabla*/
 tbody tr:nth-child(even){
     background-color: #9ac498;
 }
-/*pseudo elemento ::first-letter y ::selection*/
 article p::first-letter {
     font-size: 32px;
     font-weight: bold;
@@ -173,7 +159,6 @@ article p::first-letter {
     background-color:#1F4E79;
     color:white;
 }
-/*Agregar familia de fuentes de google fonts*/
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1.6;
@@ -185,16 +170,6 @@ aside{
     border-radius: 8px;
 
 }
-/*En este caso el padding aplica a los cuatro lados a la vez padding: 10px 20px aplica vertical y horizontal
-padding: 10px 20px 15px 5px aplica a los 4 lados valores distintos En el sentido de las manillas del reloj*/
-
-/*Aplicar lado po lado
-padding-top 10 aplica arriba
-padding-right 10px aplica derecha
-padding-bottom 10px aplica abajo
-padding-left 10px aplica izquierda*/
-
-/*Aplicamos a la tabla horario.html*/
 
 th, td{
     padding: 10px;
@@ -205,7 +180,6 @@ th, td{
 thead th{
     background-color: #1F4E79;
     color: white;
-    /*Trabaja encabezados de la tabla*/
 }
 
 tfoot td{
@@ -242,9 +216,6 @@ main li {
     margin-left: 20px;
     margin-top: 8px;
 }
-/*La sangria de dd es lo que hace visible l arelacion entre el termino y su descripcion*/
-
-/*La tabla de calendario*/
 
 table{
     border-collapse: collapse;
@@ -264,17 +235,8 @@ figure {
          
 }
 
-/*Los cinco valores de position
-static: valor por omision
-relative: se desplaza de su propia posicion
-conserva: su propia posicion y los elementos vecinos no se mueven
-absolute: se ubica respecto al ancestro mas cercano
-fixed: se ubica con respecto a la ventana, no se mueve al desplazarce
-sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
-
 .figura destacada{
-    position: relative;/*posiciona al padre y este no se mueve. Es referencia de hijos absolutos*/
-    /*galeria*/
+    position: relative;
 }
 .etiqueta {
     position: absolute;
@@ -284,11 +246,4 @@ sticky: fluye normal hasta llegar a umbral, y entonces se pega*/
     border-radius: 4px;
     font-size: 0.87rem;
     z-index: 10;
-}
-/*z-index solo funciona en elemetos que tengan un position declarados
-si el elemento es static por defecto no funciona
-escala de valores de z-index
-10:para elemtos posiscionados dentro del contenido
-100: la cabecera fija
-1000:ventanas emergentes y capas superpuestas
-9999:no hace falta usarlo casi nunca porque no deja margen a otro valor por encima*/
+}}
