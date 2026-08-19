@@ -1,109 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Valery Shanay Mora Acevedo"/>
-    <meta name="description" content="Insignia del proyecto EcoHuerto Urbano"/>
-    <meta name="keywords" content="EcoHuerto, Insignia, Sostenibilidad, Huerto Urbano"/>
-    <title>Insignia - EcoHuerto</title>
-    <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Valery Shanay Mora Acevedo">
+  <meta name="description" content="Insignia del proyecto EcoHuerto Urbano">
+  <meta name="keywords" content="EcoHuerto, Insignia, Sostenibilidad, Huerto Urbano">
+  <title>Insignia - EcoHuerto</title>
+  <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     
-  <!-- CABECERA -->
+  <!-- Encabezado / Menú -->
   <header id="inicio">
-    <h1>EcoHuerto Urbano</h1>
-    <p>Cultivando alimentos saludables y sostenibilidad en espacios reducidos.</p>
+    <div class="portada-texto">
+      <h1>EcoHuerto Urbano</h1>
+      <p>Cultivando alimentos saludables y sostenibilidad en espacios reducidos.</p>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="listas.html">Cultivos y Guias</a></li>
+        <li><a href="listas.html">Cultivos y Guías</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="galeria.html">Galería</a></li>
         <li><a href="insignia.html">Insignia</a></li>
-
       </ul>
     </nav>
   </header>
 
-
-  <main id="contenido">
-    <article>
-        <h2>Gráficas Vectoriales de EcoHuerto</h2>
-        
-        <!-- PRIMERA INSIGNIA (SVG EN LÍNEA GRANDE) -->
-        <section id="insignia">
-            <h3>Insignia Oficial de Compromiso</h3>
-            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="verdeGradiente" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#4CAF50" />
-                        <stop offset="100%" stop-color="#1B5E20" />
-                    </linearGradient>
-                    <linearGradient id="hojaGradiente" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#81C784" />
-                        <stop offset="100%" stop-color="#2E7D32" />
-                    </linearGradient>
-                    <linearGradient id="oroGradiente" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#FFE082" />
-                        <stop offset="100%" stop-color="#FFB300" />
-                    </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="90" fill="url(#verdeGradiente)" />
-                <circle cx="100" cy="100" r="75" fill="#FFFFFF" stroke="url(#oroGradiente)" stroke-width="2" />
-                <path d="M100,45 C125,75 120,115 100,130 C80,115 75,75 100,45 Z" fill="url(#hojaGradiente)" />
-                <path d="M100,70 Q100,110 100,130" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" />
-                <polygon points="100,32 104,42 115,42 106,49 109,60 100,53 91,60 94,49 85,42 96,42" fill="url(#oroGradiente)" />
-                <text x="100" y="162" text-anchor="middle" font-size="12" font-weight="bold" letter-spacing="3" fill="#1B5E20">
-                    ECOHUERTO
-                </text> 
-            </svg>
-
-            <p>Insignia oficial del movimiento EcoHuerto Urbano, promotora del cultivo sostenible de alimentos sanos directamente en la ciudad.</p>
-        </section>
-
-        <!-- SEGUNDA INSIGNIA (REPLICADA EN TAMAÑO PEQUEÑO) -->
-        <section id="externo">
-            <h3>Versión Reducida de la Insignia</h3>
-            <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="verdeGradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#4CAF50" />
-                        <stop offset="100%" stop-color="#1B5E20" />
-                    </linearGradient>
-                    <linearGradient id="hojaGradiente2" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#81C784" />
-                        <stop offset="100%" stop-color="#2E7D32" />
-                    </linearGradient>
-                    <linearGradient id="oroGradiente2" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#FFE082" />
-                        <stop offset="100%" stop-color="#FFB300" />
-                    </linearGradient>
-                </defs>
-                <circle cx="100" cy="100" r="90" fill="url(#verdeGradiente2)" />
-                <circle cx="100" cy="100" r="75" fill="#FFFFFF" stroke="url(#oroGradiente2)" stroke-width="2" />
-                <path d="M100,45 C125,75 120,115 100,130 C80,115 75,75 100,45 Z" fill="url(#hojaGradiente2)" />
-                <path d="M100,70 Q100,110 100,130" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" />
-                <polygon points="100,32 104,42 115,42 106,49 109,60 100,53 91,60 94,49 85,42 96,42" fill="url(#oroGradiente2)" />
-                <text x="100" y="162" text-anchor="middle" font-size="12" font-weight="bold" letter-spacing="3" fill="#1B5E20">
-                    ECOHUERTO
-                </text> 
-            </svg>
-
-            <p>
-                Esta versión demuestra que al tratarse de un diseño vectorial puro, se ve completamente nítido aunque reduzca su tamaño a la mitad, sin perder calidad en la pantalla.
-            </p>
-        </section>
+  <!-- Contenido Principal -->
+  <main id="contenido-principal" class="contenedor">
+    <h2>Gráficas Vectoriales de EcoHuerto</h2>
     
-    </article>
+    <!-- PRIMERA INSIGNIA (SVG EN LÍNEA GRANDE) -->
+    <section id="insignia" class="tarjeta">
+      <h3>Insignia Oficial de Compromiso</h3>
+      
+      <div class="contenedor-svg">
+        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="verdeGradiente" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4CAF50" />
+              <stop offset="100%" stop-color="#1B5E20" />
+            </linearGradient>
+            <linearGradient id="hojaGradiente" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#81C784" />
+              <stop offset="100%" stop-color="#2E7D32" />
+            </linearGradient>
+            <linearGradient id="oroGradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FFE082" />
+              <stop offset="100%" stop-color="#FFB300" />
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="90" fill="url(#verdeGradiente)" />
+          <circle cx="100" cy="100" r="75" fill="#FFFFFF" stroke="url(#oroGradiente)" stroke-width="2" />
+          <path d="M100,45 C125,75 120,115 100,130 C80,115 75,75 100,45 Z" fill="url(#hojaGradiente)" />
+          <path d="M100,70 Q100,110 100,130" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" />
+          <polygon points="100,32 104,42 115,42 106,49 109,60 100,53 91,60 94,49 85,42 96,42" fill="url(#oroGradiente)" />
+          <text x="100" y="162" text-anchor="middle" font-size="12" font-weight="bold" letter-spacing="3" fill="#1B5E20">
+            ECOHUERTO
+          </text> 
+        </svg>
+      </div>
 
-    
+      <p class="descripcion-svg">Insignia oficial del movimiento EcoHuerto Urbano, promotora del cultivo sostenible de alimentos sanos directamente en la ciudad.</p>
+    </section>
+
+    <!-- SEGUNDA INSIGNIA (REPLICADA EN TAMAÑO PEQUEÑO) -->
+    <section id="externo" class="tarjeta">
+      <h3>Versión Reducida de la Insignia</h3>
+      
+      <div class="contenedor-svg">
+        <svg width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="verdeGradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4CAF50" />
+              <stop offset="100%" stop-color="#1B5E20" />
+            </linearGradient>
+            <linearGradient id="hojaGradiente2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#81C784" />
+              <stop offset="100%" stop-color="#2E7D32" />
+            </linearGradient>
+            <linearGradient id="oroGradiente2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FFE082" />
+              <stop offset="100%" stop-color="#FFB300" />
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="90" fill="url(#verdeGradiente2)" />
+          <circle cx="100" cy="100" r="75" fill="#FFFFFF" stroke="url(#oroGradiente2)" stroke-width="2" />
+          <path d="M100,45 C125,75 120,115 100,130 C80,115 75,75 100,45 Z" fill="url(#hojaGradiente2)" />
+          <path d="M100,70 Q100,110 100,130" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" />
+          <polygon points="100,32 104,42 115,42 106,49 109,60 100,53 91,60 94,49 85,42 96,42" fill="url(#oroGradiente2)" />
+          <text x="100" y="162" text-anchor="middle" font-size="12" font-weight="bold" letter-spacing="3" fill="#1B5E20">
+            ECOHUERTO
+          </text> 
+        </svg>
+      </div>
+
+      <p class="descripcion-svg">
+        Esta versión demuestra que al tratarse de un diseño vectorial puro, se ve completamente nítido aunque reduzca su tamaño a la mitad, sin perder calidad en la pantalla.
+      </p>
+    </section>
+
+    <!-- Enlace para regresar al inicio -->
+    <p class="volver-arriba"><a href="#inicio" class="boton-secundario">Volver arriba ↑</a></p>
   </main>
 
-  <!-- PIE DE PÁGINA -->
- <footer id="pie-pagina">
+  <!-- Pie de Página -->
+  <footer id="pie-pagina">
     <address>
       <p>Consultas sobre talleres: <a href="mailto:info@ecohuertourbano.cr">info@ecohuertourbano.cr</a></p>
     </address>
