@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!DOCTYPE html>
+ </main>ner O<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -45,190 +42,173 @@
     </header>
 
     <main id="contenido">
-    <!--ENCABEZADO DE LA PAGINAGALERIA-->
-    <section id="intro" class="seccion">
-        <div class="rejillas-cifras">
-            <p class="cifra-numero">480</p>
-            <p class="cifra-texto">Seciones realizadas</p>
-        </div>
+        <!--ENCABEZADO DE LA PAGINA GALERIA-->
+        <section id="intro" class="pagina-encabezado">
+            <h1 class="pagina-titulo">Galeria</h1>
+            <p class="pagina-bajada">
+                Una selección de los que hemos fotografiado entre 2024 y 2026    
+            </p>
+        </section>
 
-         <div class="rejillas-cifras">
-            <p class="cifra-numero">12</p>
-            <p class="cifra-texto">Años e trayectoria</p>
-        </div>
+        <!--CIFRAS. 4 DATOS QUE SE MAQUETAN CON CSS GRID-->
+        <section id="cifras" class="seccion" >
+            <div class="rejilla-cifras">
 
-         <div class="rejillas-cifras">
-            <p class="cifra-numero">36</p>
-            <p class="cifra-texto">Marcas acompañadas</p>
-        </div>
+                <div class="cifra">
+                    <p class="cifra-numero">480</p>
+                    <p class="cifra-texto">Sesiones realizadas </p>
+                </div>
 
-         <div class="rejillas-cifras">
-            <p class="cifra-numero">98%</p>
-            <p class="cifra-texto">Volveria a contratarnos</p>
-        </div>
-   </section>
+                <div class="cifra">
+                    <p class="cifra-numero">12</p>
+                    <p class="cifra-texto">Años de trayectoria </p>
+                </div>
 
-   <section id="categorias" class="seccion">
-    <h2 class="seccion-titulo">Explora por categoria</h2>
-    <p class="seccion-entrada">
-       Cada enlace lleva a su sección dentro de esta misma pagina
-    </p>
+                <div class="cifra">
+                    <p class="cifra-numero">36</p>
+                    <p class="cifra-texto">Marcas acompañadas</p>
+                </div>
 
-    <ul class="fila-etiqueta">
-        <li><a href="#mosario" class="etiqueta">Todo el trabajo</a></li>
-        <li><a href="#retrato" class="etiqueta">Retrato</a></li>
-        <li><a href="#producto" class="etiqueta">Producto</a></li>
-        <li><a href="#eventos" class="etiqueta">Evento</a></li>
-    </ul>
-   </section>
+                <div class="cifra">
+                    <p class="cifra-numero">98%</p>
+                    <p class="cifra-texto">Volveria a contratarnos</p>
+                </div>
 
-   <section id="mosaico" class="seccion seccion-alterna">
-      <h2 class="seccion-titulo">Todo el trabajo</h2>
+            </div>
+        </section>
 
-      <div class="mosaico">
-           <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-01.jpg" alt=""
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+        <!--Categoria. etiquetas. se maquetan con flexbox
+        son enlaces a las anclas de cada seccion. -->
 
-       </figure>
+        <section id="categorias" class="seccion"> 
+            <h2 class="seccion-titulo">Explorar por categoria </h2>
+            <p class="seccion-entrada">
+                Cada enlace lleva a su sección dentro de esta página. 
+            </p>
 
-        <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+            <ul class="fila-etiquetas">
+                <li><a href="#mosaico" class="etiqueta">Todo el trabajo</a></li>
+                <li><a href="#retrato" class="etiqueta">Retrato</a></li>
+                <li><a href="#producto" class="etiqueta">Producto </a></li>
+                <li><a href="#eventos" class="etiqueta">Eventos </a></li>
+            </ul>
+        </section>
 
-        <figure class="pieza pieza-ancha">
-         <img src="recursos/g-02.jpg" alt="fotografia vertical de una botella de ceramica sobre madera"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+        <!--MOSAICO PRINCIPAL. CSS GRID con piezas de tamaño distinto. pieza central de la pagina-->
+        <section id="mosaico" class="seccion-alterna">
+            <h2 class="seccion-titulo"> Todo el trabajo</h2>
 
-       </figure>
+            <div class="mosaico">
 
-         <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+                <!--recursos/g-01.jpg . 1200 x 800 px . ocupa dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-01.jpg" alt="retrato de una mujer junto a una ventana con luz natural" width="1200" height="800" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Luz de ventana</span>
+                        <span class="pieza-categoria">Retrato</span>
+                    </figcaption>    
+                </figure>
 
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-03.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+                <!--recursos/g-02.jpg . 600 x 900 px . ocupa dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-02.jpg" alt="Fotografía vertical de una botella de cerámica sobre una madera" width="600" height="900" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Cerámica de Guaitil</span>
+                        <span class="pieza-categoria">Producto</span>
+                    </figcaption>    
+                </figure>
 
-       </figure>
+                <!--recursos/g-03.jpg . 600 x 600 px-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-03.jpg" alt="Detalle de manos entrelazadas durante una ceremonia" width="600" height="600" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Ceremonia</span>
+                        <span class="pieza-categoria">Eventos</span>
+                    </figcaption>    
+                </figure>
 
-            <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+                <!--recursos/g-04.jpg . 600 x 600 px . dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-04.jpg" alt="Retrato en blanco u negro de un hombre mayor sonriendo" width="600" height="600" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Don Rafael</span>
+                        <span class="pieza-categoria">Retrato</span>
+                    </figcaption>    
+                </figure>
 
-         <figure class="pieza pieza-ancha">
-         <img src="recursos/g-04.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+                <!--recursos/g-05.jpg . 1200 x 1200 px . ocupan 2x2-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-05.jpg" alt="Vista general de un salón durante una celebración al atardecer " width="1200" height="1200" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Atarceder en Santa Ana</span>
+                        <span class="pieza-categoria">Eventos</span>
+                    </figcaption>    
+                </figure>
 
-       </figure>
+                <!--recursos/g-06.jpg . 600 x 600 px . dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-06.jpg" alt="Taza de café sobre fondo neutro con sombra marcada" width="600" height="600" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Serie café</span>
+                        <span class="pieza-categoria">Producto</span>
+                    </figcaption>    
+                </figure>
 
-            <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+                <!--recursos/g-07.jpg . 1200 x 800 px . ocupan dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-07.jpg" alt="Grupo de personas conversando durante un evento corporativo" width="1200" height="800" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Encuentro anual</span>
+                        <span class="pieza-categoria">Eventos</span>
+                    </figcaption>    
+                </figure>
 
-          <figure class="pieza pieza-ancha">
-         <img src="recursos/g-05.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+                <!--recursos/g-08.jpg . 600 x 900 px . ocupa dos filas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-08.jpg" alt="Retrato de cuerpo entero de una bailarina en el estudio" width="1200" height="800" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Estudio de movimiento</span>
+                        <span class="pieza-categoria">Retrato</span>
+                    </figcaption>    
+                </figure>
 
-       </figure>
-        
-         <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+                <!--recursos/g-09.jpg . 600 x 600 px . -->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-09.jpg" alt="Conjunto de joyas artesanales sobre tela oscura" width="600" height="600" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Joyería artesanal</span>
+                        <span class="pieza-categoria">Productio</span>
+                    </figcaption>    
+                </figure>
 
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-06.jpg" alt="Taza de café sobre fondo neutro con sombra marcada"
-             width="600" height="600" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Serie Café</span>
-             <span class="pieza-categoria">Praducto</span>
-          </figcaption>
+                <!--recursos/g-10.jpg . 600 x 600 px . dos columnas-->
+                <figure class="pie pieza-ancha"> 
+                    <img src="recursos/g-10.jpg" alt="Niña riendo durante una sesión familiar en exteriores" width="600" height="600" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Sesión familiar</span>
+                        <span class="pieza-categoria">Retrato</span>
+                    </figcaption>    
+                </figure>
 
-       </figure>
+            </div>
+        </section>
+            <!--SECCIONES DE CATEGORIA . Reutiliza la rejilla de página de inicio-->
+        <section id="retrato" class="seccion"> 
+            <h2 class="seccion-titulo">Retrato </h2>
+            <p class="seccion-entrada">Sesiones individuales, familiares y de perfil profesional. </p>
 
-           <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
+            <div class="rejilla-categoria">
+                <figure class="pieza"> 
+                <img src="recursos/g-01.jpg" alt="retrato de una mujer junto a una ventana " width="1200" height="800" loading="lazy">
+                    <figcaption class="pieza-info">
+                        <span class="pieza-titulo">Luz de ventana</span>
+                    </figcaption>
+                </figure>
+            </div>
 
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-07.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
+        </section>
 
-       </figure>
-
-            <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
-
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-08.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
-
-       </figure>
-
-            <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
-
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-09.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
-
-       </figure>
-
-            <!--CABECERA.SE REPITE EN LAS 4 PAGINAS-->
-         
-       <figure class="pieza pieza-ancha">
-         <img src="recursos/g-10.jpg" alt="Retrato de una mujer junto a una ventana  con luz natural"
-             width="1200" height="800" loading="lazy">
-          <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-             <span class="pieza-categoria">Retrato</span>
-          </figcaption>
-
-       </figure>
-
-      </div>
-   </section>
-
-     <!--secciones de categoria reutiliza la rejilla de pie de inicio-->
-
-     <section id="retrato" class="seccion">
-        <h2 class="seccion-talleres">Retrato</h2>
-        <p class="seccion-entrada">Secciones Individuales, Familiares y de perfil profesional</p>
-
-        <div class="rejilla-categoria">
-            <figure>
-                
-           <img src="recursos/g-02.jpg" alt="fotografia vertical de una botella de ceramica sobre madera"
-             width="1200" height="800" loading="lazy">
-         <figcaption class="pieza-info">
-             <span class="pieza-titulo">Luz de ventana</span>
-          </figcaption>
-
-          </figure>
-       </div>
-
-     </section>
-
-    </main>
+      </main>
     
 </body>
 </html>
