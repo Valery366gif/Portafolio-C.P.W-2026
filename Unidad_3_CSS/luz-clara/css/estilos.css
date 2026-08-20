@@ -1,0 +1,19 @@
+/*ESTUDIO LUZ CLARA*/
+
+/*VARIABLES Y CONFIGURACIÓN*/
+/*Una VALRIABLE guarda un valor o un nombre para poder reutilizar. 
+Se declara dentro :root, este root representa el elemtento html y es el ancestro
+de todos (esta encima de los demas). Todos los elementos lo pueden usar.*/
+
+:root {
+    /*se usa para la paleta de colores*/
+    --color-suave: #1a1a1a; /*texto principal, casi negro*/
+    --color-suave: #6b6b6b; /*texto segundario pies de foto*/
+    --color-suave: #2c3e50; /*el azul de del estudio*/
+    --color-suave: #c87941; /*color terracota de los botones*/
+    --color-suave: #a45f2e; /*terracota oscuro*/
+    --color-suave: #fafaf8; /*blanco roto, no blanco puro*/
+    --color-suave: #f0eee9; /*para alternar fondos secciones*/
+    --color-suave: #dddad3; /*bordes y separadores*/
+    --color-suave: #ffffff; /*blanco puro*/
+}
