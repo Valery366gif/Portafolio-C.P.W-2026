@@ -1,0 +1,531 @@
+
+/*PRÁCTICA 01*/
+
+/* ESTILOS GENERALES Y VARIABLES (ESTILO VIOLETA CREATIVO) */
+
+
+:root {
+  --color-primario: #0f021e;        /* Morado oscuro profundo */
+  --color-secundario: #8b3dff;      /* Morado vibrante / Neón */
+  --color-fondo: #f9f8fc;           /* Fondo gris/violeta muy suave */
+  --color-fondo-alterno: #f0edf6;   /* Fondo alterno más cálido */
+  --color-blanco: #ffffff;
+  --color-texto: #2d2640;
+  --color-texto-suave: #6b6380;
+  --color-borde: #e3dff0;
+  --borde-radio: 8px;
+  --fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* CABECERA Y NAVEGACIÓN */
+.cabecera {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6%;
+  border-bottom: 1px solid var(--color-borde);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.identidad {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.identidad-inicial {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.identidad-nombre {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--color-primario);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-enlace {
+  font-weight: 500;
+  color: var(--color-primario);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.menu-enlace:hover {
+  color: var(--color-secundario);
+}
+
+/* PRESENTACIÓN*/
+.presentacion {
+  background: linear-gradient(145deg, #2e1a47 0%, #180d26 100%);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.presentacion-saludo {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.85;
+}
+
+.presentacion-titulo {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.presentacion-rol {
+  font-size: 1.2rem;
+  color: var(--color-secundario);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.presentacion-texto {
+  max-width: 580px;
+  margin: 0 auto 2.5rem auto;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+/* BOTONES Y ESTILOS GENERALES DE SECCIÓN */
+.seccion {
+  padding: 6rem 10%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.seccion-alterna {
+  background-color: var(--color-fondo-alterno);
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.seccion-titulo {
+  text-align: center;
+  font-size: 2.3rem;
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.seccion-entrada {
+  text-align: center;
+  color: var(--color-texto-suave);
+  margin-bottom: 3.5rem;
+  font-size: 1.1rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border-radius: var(--borde-radio);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+.boton-principal {
+  background-color: var(--color-secundario);
+  color: var(--color-blanco);
+  box-shadow: 0 4px 12px rgba(139, 61, 255, 0.3);
+}
+
+.boton-principal:hover {
+  background-color: #722bdc;
+  transform: translateY(-1px);
+}
+
+.boton-secundario {
+  background-color: transparent;
+  color: var(--color-texto);
+  border: 1px solid var(--color-borde);
+}
+
+.boton-secundario:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* SECCIÓN PERFIL · DOS COLUMNAS */
+.dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.columna-texto p {
+  margin-bottom: 1.25rem;
+}
+
+.cita {
+  border-left: 3px solid var(--color-secundario);
+  padding-left: 1.5rem;
+  margin: 2.5rem 0;
+  font-style: italic;
+  color: var(--color-primario);
+  background: rgba(139, 61, 255, 0.03);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.cita-texto {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cita-autoria {
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  font-style: normal;
+}
+
+.subtitulo {
+  font-size: 1.15rem;
+  color: var(--color-primario);
+  margin-bottom: 0.75rem;
+  margin-top: 1.75rem;
+  font-weight: 600;
+}
+
+.subtitulo:first-child {
+  margin-top: 0;
+}
+
+.lista-servicios {
+  margin-bottom: 2rem;
+}
+
+.lista-servicios > li {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--color-primario);
+}
+
+.lista-servicios ul {
+  margin-left: 1.25rem;
+  margin-top: 0.3rem;
+}
+
+.lista-servicios ul li {
+  font-weight: normal;
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  list-style-type: disc;
+}
+
+.glosario dt {
+  font-weight: 600;
+  color: var(--color-primario);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+.glosario dd {
+  color: var(--color-texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* SECCIÓN TRABAJOS · REJILLA DE TARJETAS */
+.rejilla-trabajos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.trabajo {
+  background-color: var(--color-blanco);
+  padding: 2.25rem;
+  border-radius: var(--borde-radio);
+  box-shadow: 0 10px 30px rgba(46, 26, 71, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-borde);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.trabajo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(46, 26, 71, 0.08);
+}
+
+.trabajo-etiqueta {
+  display: inline-block;
+  background-color: var(--color-fondo-alterno);
+  color: var(--color-primario);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.trabajo-titulo {
+  font-size: 1.25rem;
+  color: var(--color-primario);
+  margin-bottom: 0.75rem;
+}
+
+.trabajo-texto {
+  font-size: 0.95rem;
+  color: var(--color-texto-suave);
+  margin-bottom: 1.75rem;
+}
+
+.trabajo-anio {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  border-top: 1px solid var(--color-borde);
+  padding-top: 1rem;
+}
+
+/* SECCIÓN TRAYECTORIA · TABLA */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-blanco);
+  border-radius: var(--borde-radio);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(46, 26, 71, 0.04);
+  border: 1px solid var(--color-borde);
+  margin-top: 1rem;
+}
+
+.tabla-titulo {
+  text-align: left;
+  caption-side: top;
+  margin-bottom: 1.25rem;
+  color: var(--color-texto-suave);
+  font-size: 1.1rem;
+}
+
+.tabla th,
+.tabla td {
+  padding: 1.15rem 1.5rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.tabla thead th {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tabla tbody tr {
+  border-bottom: 1px solid var(--color-borde);
+  transition: background-color 0.15s ease;
+}
+
+.tabla tbody tr:hover {
+  background-color: rgba(139, 61, 255, 0.02);
+}
+
+.tabla tbody tr:last-child {
+  border-bottom: none;
+}
+
+.tabla tbody th {
+  font-weight: 600;
+  color: var(--color-primario);
+}
+
+.tabla tfoot td {
+  background-color: var(--color-fondo-alterno);
+  font-style: italic;
+  color: var(--color-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* SECCIÓN CONTACTO · FORMULARIO */
+.formulario {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.grupo {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--borde-radio);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(46, 26, 71, 0.02);
+}
+
+.grupo-titulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primario);
+  padding: 0 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.campo {
+  margin-bottom: 1.5rem;
+}
+
+.campo:last-child {
+  margin-bottom: 0;
+}
+
+.campo-etiqueta {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+
+.campo-entrada {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--borde-radio);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--color-blanco);
+  color: var(--color-texto);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo-entrada:focus {
+  outline: none;
+  border-color: var(--color-secundario);
+  box-shadow: 0 0 0 3px rgba(139, 61, 255, 0.15);
+}
+
+.campo-ayuda {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-texto-suave);
+  margin-top: 0.35rem;
+}
+
+.grupo-opciones {
+  border: none;
+  padding: 0;
+  margin: 1.75rem 0 0 0;
+}
+
+.grupo-opciones .grupo-titulo {
+  padding: 0;
+  margin-bottom: 0.85rem;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.opcion-etiqueta {
+  font-size: 0.95rem;
+  color: var(--color-texto);
+  cursor: pointer;
+}
+
+.fila-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+/* PIE DE PÁGINA */
+.pie {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: 5rem 10% 2.5rem 10%;
+}
+
+.pie-columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 3.5rem;
+}
+
+.pie-titulo {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: var(--color-blanco);
+}
+
+.pie-texto,
+.pie-datos {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.pie-enlace {
+  color: var(--color-secundario);
+  text-decoration: underline;
+}
+
+.pie-creditos {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
