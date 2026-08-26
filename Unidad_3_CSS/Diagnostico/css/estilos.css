@@ -1,0 +1,376 @@
+/*TALLER LA COLMENA · HOJA DE ESTILOS CORREGIDA Y NUMERADA */
+
+
+/* 1 · RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* [Error 2] Se añadió para que las cajas midan correctamente con sus paddings y bordes[cite: 2, 5]. */
+}
+
+
+/* 2 · VARIABLES */
+:root {
+  --miel:      #B8860B;
+  --miel-osc:  #8B6508;
+  --madera:    #5D4037;
+  --tinta:     #2B2B2B;
+  --suave:     #6E6E6E;
+  --crema:     #FDFAF5;
+  --crema-alt: #F3EDE3;
+  --linea:     #DDD5C8;
+  --blanco:    #FFFFFF;
+
+  --esp-sm: 1.6rem;
+  --esp-md: 2.4rem;
+  --esp-lg: 4rem;
+  --radio:  0.6rem;
+  --sombra: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+  --transicion: 0.25s ease;
+}
+
+
+/* 3 · BASE */
+html {
+  font-size: 62.5%; /* [Error 1] Define la escala base para que los rem funcionen adecuadamente[cite: 2, 5]. */
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--tinta);
+  background-color: var(--crema);
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  line-height: 1.2;
+  color: var(--madera);
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+
+p { margin-bottom: var(--esp-sm); }
+
+a {
+  color: var(--miel);
+  text-decoration: none;
+}
+
+/* [Error 15] Se sincroniza la jerarquía de tamaños rem de los encabezados con la base del documento[cite: 2, 5]. */
+
+
+/* 4 · CONTENEDORES */
+.seccion {
+  max-width: 110rem; /* [Error 11] Se cambió de ancho fijo a max-width para evitar la barra horizontal[cite: 2, 5]. */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--esp-lg) var(--esp-md);
+}
+
+.seccion-alterna {
+  background-color: var(--crema-alt);
+}
+
+.seccion-titulo {
+  margin-bottom: var(--esp-md); /* [Error 3] Se añadió el punto y coma que faltaba[cite: 2, 5]. */
+  padding-bottom: var(--esp-sm);
+  border-bottom: 0.2rem solid var(--linea);
+}
+
+
+/* 5 · CABECERA */
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--esp-sm) var(--esp-md);
+  background-color: var(--blanco);
+  border-bottom: 0.1rem solid var(--linea);
+  position: sticky;
+  top: 0; /* [Error 5] Se corrigió la 'o' minúscula por el número '0'[cite: 5]. */
+  z-index: 100; /* [Error 13] Se aseguró el apilamiento correcto al hacer scroll[cite: 5]. */
+}
+
+.marca h1 { font-size: 2.6rem; }
+
+.lema {
+  font-size: 1.4rem;
+  color: var(--suave);
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.menu {
+  display: flex;
+  gap: var(--esp-sm);
+  list-style: none;
+}
+
+.menu-enlace { /* [Error 4] Se añadió el punto para que sea una clase válida[cite: 2, 5]. */
+  padding: 1rem 1.6rem;
+  color: var(--tinta);
+  font-weight: 600;
+  border-radius: var(--radio);
+}
+
+.menu-enlace:hover {
+  background-color: var(--crema-alt);
+  color: var(--madera);
+  transition: background-color var(--transicion);
+}
+
+.menu-enlace.activo {
+  color: var(--miel);
+}
+
+
+/* 6 · TARJETAS */
+.fila-tarjetas {
+  display: flex;
+  gap: var(--esp-md);
+}
+
+.tarjeta {
+  flex: 1 1 28rem;
+  background-color: var(--blanco);
+  padding: var(--esp-md);
+  border: 0.1rem solid var(--linea);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-titulo {
+  margin-bottom: 0.8rem;
+}
+
+.tarjeta-texto {
+  color: var(--suave);
+}
+
+.tarjeta-precio {
+  margin-top: auto; /* [Error 6] Empuja el precio hacia la parte inferior de la tarjeta[cite: 2, 5]. */
+  margin-bottom: 0;
+  padding-top: var(--esp-sm);
+  border-top: 0.1rem solid var(--linea);
+  font-weight: 700;
+  color: var(--madera);
+}
+
+
+/* 7 · TABLA */
+.tabla {
+  width: 100%;
+  border-collapse: collapse; /* [Error 7] Se añadió para evitar líneas dobles en las celdas[cite: 2, 5]. */
+}
+
+.tabla-titulo {
+  padding: var(--esp-sm);
+  text-align: left;
+  font-size: 1.4rem;
+  color: var(--suave);
+}
+
+.tabla th,
+.tabla td {
+  padding: 1.2rem;
+  border-bottom: 0.1rem solid var(--linea);
+  text-align: left;
+}
+
+.tabla thead th {
+  background-color: var(--madera);
+  color: var(--blanco);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.tabla tbody tr:nth-child(even) {
+  background-color: var(--crema);
+}
+
+.tabla tfoot td {
+  background-color: var(--crema-alt);
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+
+/* 8 · CITA */
+.cita {
+  position: relative; /* [Error 8] Se añadió para fijar el contexto de posicionamiento de la comilla[cite: 2, 5]. */
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: var(--esp-md) var(--esp-lg);
+  background-color: var(--blanco);
+  border-left: 0.5rem solid var(--miel);
+  border-radius: 0 var(--radio) var(--radio) 0;
+  box-shadow: var(--sombra);
+}
+
+.cita::before {
+  content: "“"; /* [Error 8] Se añadió la propiedad content obligatoria[cite: 2, 5]. */
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  font-family: Georgia, serif;
+  font-size: 7rem;
+  color: var(--miel);
+  opacity: 0.25;
+}
+
+.cita-texto {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.cita-autoria {
+  color: var(--suave);
+  font-size: 1.4rem;
+  text-align: right;
+  font-style: normal;
+}
+
+
+/* 9 · FORMULARIO */
+.formulario {
+  max-height: 68rem;
+}
+
+.grupo {
+  border: 0.1rem solid var(--linea);
+  border-radius: var(--radio);
+  padding: var(--esp-md);
+  background-color: var(--blanco);
+}
+
+.grupo-titulo {
+  padding: 0 0.8rem;
+  font-weight: 700;
+  color: var(--madera);
+  font-size: 1.8rem;
+}
+
+.campo {
+  margin-bottom: var(--esp-sm);
+}
+
+.campo-etiqueta {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 1rem 1.4rem;
+  border: 0.1rem solid var(--linea);
+  border-radius: var(--radio);
+  font-size: 1.6rem;
+  background-color: var(--crema);
+  box-sizing: border-box; /* [Error 9] Evita que los inputs se deformen o salgan del contenedor[cite: 2, 5]. */
+}
+
+.campo-entrada:focus,
+.campo input:focus,
+.campo textarea:focus {
+  outline: 0.2rem solid var(--miel); /* [Error 10] Permite ver el foco claramente al navegar con Tab[cite: 2, 5]. */
+  border-color: var(--miel);
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.opcion-marca {
+  width: 1.8rem;
+  height: 1.8rem;
+  accent-color: var(--miel);
+  align-self: center; /* [Error 14] Alinea correctamente el checkbox con su etiqueta[cite: 5]. */
+}
+
+
+/* 10 · BOTONES */
+.boton {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: var(--radio);
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton-principal {
+  background-color: var(--miel);
+  color: var(--blanco);
+}
+
+.boton-principal:hover {
+  background-color: var(--miel-osc);
+}
+
+.boton-secundario {
+  background-color: var(--crema-alt);
+  color: var(--tinta);
+}
+
+.fila-botones {
+  display: flex;
+  gap: var(--esp-sm);
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+
+/* 11 · PIE */
+.pie {
+  background-color: var(--madera);
+  color: var(--blanco);
+  padding: var(--esp-lg) var(--esp-md) var(--esp-md);
+  margin-top: var(--esp-lg);
+}
+
+.pie-columnas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* [Error 12] Usa columnas flexibles en lugar de porcentajes fijos para evitar desbordes[cite: 2, 5]. */
+  gap: var(--esp-md);
+}
+
+.pie-titulo {
+  color: var(--blanco);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.pie-texto,
+.pie-datos {
+  font-size: 1.4rem;
+  font-style: normal;
+  opacity: 0.88;
+}
+
+.pie-enlace {
+  color: var(--blanco);
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+.pie-creditos {
+  margin-top: var(--esp-md);
+  padding-top: var(--esp-sm);
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.22);
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
