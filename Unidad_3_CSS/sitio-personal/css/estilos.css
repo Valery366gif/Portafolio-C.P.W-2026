@@ -2,7 +2,7 @@
 /* Reset basico a todo*/
 /*100% del tamaño que el usuario configuro. Por imision son 16px, */
 html {
-    font-size: 100%;
+   font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -211,12 +211,12 @@ header nav a:hover {
 
 /* Variante botón secundario */
 .boton-secundario {
-    background: linear-gradient(135deg, #e07a5f 0%, #d8572a 100%);
+    background: linear-gradient(135deg, #105a1b 0%, #6cbe95 100%);
     box-shadow: 0 6px 18px rgba(224, 122, 95, 0.25);
 }
 
 .boton-secundario:hover {
-    background: linear-gradient(135deg, #f48c06 0%, #e07a5f 100%);
+    background: linear-gradient(135deg, #abfeb2 0%, #329529 100%);
     box-shadow: 0 12px 25px rgba(224, 122, 95, 0.4);
 }
 
@@ -385,12 +385,12 @@ form textarea:focus {
 
 /* Validación suave con color */
 form input:invalid:not(:placeholder-shown) {
-    border-color: #e63946;
+    border-color: #2a9d8f;
     box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.12);
 }
 
 form input:valid:not(:placeholder-shown) {
-    border-color: #2a9d8f;
+    border-color: #2a9d8f;/*color de  detalles de solicitud*/
     box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.12);
 }
 
