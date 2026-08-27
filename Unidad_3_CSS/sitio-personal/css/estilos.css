@@ -99,7 +99,7 @@ blockquote {
     margin: 24px 0;
 }
 
-/* --- HEADER Y MENÚ FLOTANTE --- */
+/* --- HEADER--- */
 #inicio {
     display: flex;
     justify-content: space-between;
@@ -132,7 +132,7 @@ header nav ul {
     gap: 12px;
 }
 
-/* Botones del menú de navegación */
+/* BOTONES DEL MENÚ DE NAVEGACIÓN */
 header nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -140,19 +140,19 @@ header nav a {
     font-weight: 700;
     text-decoration: none;
     padding: 10px 20px;
-    color: #ffffff;
-    border-radius: 30px;
+    color: #ffffff;/*COLOR DE TEXTOS*/
+    border-radius: 30px;/*BORDES REDONDEADOS*/
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header nav a:hover {
-    color: #1b4332;
-    background-color: #74c69d;
-    border-color: #74c69d;
+    color: #1b4332;/*COLOR DE LETRAS HOVER*/
+    background-color: #74c69d; /*COLOR DE BORDES, SE VE BRRILANTE*/
+    border-color: #74c69d;/*COLOR DEL HOVER*/
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(116, 198, 157, 0.4);
+    box-shadow: 0 6px 20px rgba(116, 198, 157, 0.4);/*SOMBRA*/
 }
 
 /* --- EFECTOS DE BOTONES PRINCIPALES --- */
@@ -176,7 +176,7 @@ header nav a:hover {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Brillito que cruza el botón al pasar el mouse */
+/* EFECTO DEL BRILLO AL PASAR EL MOUSE POR LO BOTONES */
 .boton::before, .boton-secundario::before {
     content: '';
     position: absolute;
@@ -437,7 +437,7 @@ tbody tr:hover {
 /* --- FOOTER --- */
 footer {
     background: linear-gradient(135deg, #90c1ad 0%, #275847 100%);
-    color: #d8f3dc;
+    color: #000000;/*COLOR DE LETRAS*/
     padding: 32px;
     margin-top: 40px;
     border-radius: 20px 20px 0 0;
