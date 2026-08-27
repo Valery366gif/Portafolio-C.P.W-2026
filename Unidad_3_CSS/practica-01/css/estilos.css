@@ -12,7 +12,7 @@
   --color-blanco: #ffffff;
   --color-texto: #2d2640;
   --color-texto-suave: #6b6380;
-  --color-borde: #e3dff0;
+  --color-borde: #e8e6f1;
   --borde-radio: 8px;
   --fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -344,7 +344,7 @@ ul {
   background-color: var(--color-blanco);
   border-radius: var(--borde-radio);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(46, 26, 71, 0.04);
+  box-shadow: 0 10px 30px rgba(78, 4, 168, 0.04);
   border: 1px solid var(--color-borde);
   margin-top: 1rem;
 }
@@ -379,7 +379,7 @@ ul {
 }
 
 .tabla tbody tr:hover {
-  background-color: rgba(139, 61, 255, 0.02);
+  background-color: rgba(219, 196, 253, 0.381);
 }
 
 .tabla tbody tr:last-child {

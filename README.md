@@ -74,8 +74,7 @@ Portafolio-Codificación de Páginas Web/
 |  S06   | Formularios y semántica        | Controles de entrada de formularios (`<input>.<select>,<textarea>`),     | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                | validaciones nativas y etiquetas semánticas                              |
 |        |                                | (`<header>, <nav>`, `<main>`, `<article>`, `<footer>`)                   |
-|  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](/Unidad_2_html/sitio-demo/galeria.html) | [ver](/Unidad_2_html/sitio-demo/recursos/evidencias.png) |
-|        |                                |imágenes incrustadas con buenas prácticas de accesibilidad.               |
+|  S07   | Multimedia                     | Inserción y control de elementos de audio(`<audio>`),video(`<video>`)e   | [ver](/Unidad_2_html/sitio-demo/galeria.html) | 
 |  S08   | SVG y repaso                   |Incorporación y manipulación de gráficos vectoriales SVG dentro de la     | [ver](unidad-02/) | [ver](recursos/) |
 |        |                                |estructura HTML y repaso general de la unidad.                            |                                      |
 
