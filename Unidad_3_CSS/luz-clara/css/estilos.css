@@ -1,9 +1,5 @@
 
-/* =========================================================
-   ESTUDIO LUZ CLARA · ESTILOS
-   Diseño inspirado en la referencia del video
-   ========================================================= */
-
+/* ESTUDIO LUZ CLARA · ESTILOS*/
 *,
 *::before,
 *::after {
@@ -61,9 +57,7 @@ img {
   display: block;
 }
 
-/* =========================
-   CABECERA
-   ========================= */
+/* CABECERA */
 
 .cabecera {
   min-height: 62px;
@@ -134,9 +128,7 @@ img {
   background: var(--naranja);
 }
 
-/* =========================
-   ESTRUCTURA GENERAL
-   ========================= */
+/* ESTRUCTURA GENERAL */
 
 .seccion {
   width: min(920px, calc(100% - 3rem));
@@ -190,7 +182,7 @@ img {
   min-height: 310px;
   background-image:
     linear-gradient(rgba(24, 27, 32, .52), rgba(24, 27, 32, .52)),
-    url("../recursos/portada\ \(4\).webp");
+    url("../recursos/portada.webp");
   background-size: cover;
   background-position: center;
   color: var(--blanco);
@@ -225,9 +217,7 @@ img {
   color: var(--blanco);
 }
 
-/* =========================
-   BOTONES
-   ========================= */
+/* BOTONES*/
 
 .boton {
   display: inline-block;
@@ -262,9 +252,7 @@ img {
   background: #f3f2ee;
 }
 
-/* =========================
-   TARJETAS DE SERVICIOS
-   ========================= */
+/* TARJETAS DE SERVICIOS */
 
 .fila-servicio {
   display: flex;
@@ -324,9 +312,7 @@ img {
   font-weight: 700;
 }
 
-/* =========================
-   GALERÍA DE INICIO
-   ========================= */
+/* GALERÍA DE INICIO */
 
 .rejilla-galeria {
   display: grid;
@@ -360,9 +346,7 @@ img {
   text-align: center;
 }
 
-/* =========================
-   CITAS
-   ========================= */
+/* CITAS*/
 
 .cita {
   width: min(650px, 100%);
@@ -401,9 +385,7 @@ img {
   font-size: .7rem;
 }
 
-/* =========================
-   PÁGINA NOSOTROS
-   ========================= */
+/*PÁGINA NOSOTROS */
 
 .dos-columnas {
   display: flex;
@@ -511,9 +493,7 @@ img {
   margin-left: 1rem;
 }
 
-/* =========================
-   TABLA DE CONTACTO
-   ========================= */
+/* TABLA DE CONTACTO */
 
 .tabla-envoltorio {
   overflow-x: auto;
@@ -563,9 +543,7 @@ img {
   font-size: .7rem;
 }
 
-/* =========================
-   FORMULARIO
-   ========================= */
+/* FORMULARIO*/
 
 .formulario {
   width: min(650px, 100%);
@@ -656,9 +634,7 @@ img {
   margin: 1rem 0 .2rem;
 }
 
-/* =========================
-   UBICACIÓN
-   ========================= */
+/*  UBICACIÓN*/
 
 .direccion {
   color: var(--gris-texto);
@@ -672,9 +648,7 @@ img {
   padding-left: 1.2rem;
 }
 
-/* =========================
-   GALERÍA · CIFRAS Y ETIQUETAS
-   ========================= */
+/*GALERÍA · CIFRAS Y ETIQUETAS*/
 
 .rejilla-cifras {
   display: grid;
@@ -734,9 +708,7 @@ img {
   border-color: var(--naranja-suave);
 }
 
-/* =========================
-   MOSAICO DE GALERÍA
-   ========================= */
+/* MOSAICO DE GALERÍA*/
 
 #mosaico {
   padding-top: 3rem;
@@ -796,9 +768,7 @@ img {
   color: #eee9e4;
 }
 
-/* =========================
-   CATEGORÍAS Y LLAMADO
-   ========================= */
+/*  CATEGORÍAS Y LLAMADO*/
 
 .rejilla-categoria {
   display: grid;
@@ -860,9 +830,7 @@ img {
   font-size: .75rem;
 }
 
-/* =========================
-   PIE DE PÁGINA
-   ========================= */
+/* PIE DE PÁGINA */
 
 .pie {
   background: var(--azul);
@@ -917,9 +885,7 @@ img {
   font-size: .7rem;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+/*RESPONSIVE */
 
 @media (max-width: 800px) {
   .cabecera {
