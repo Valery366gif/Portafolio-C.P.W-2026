@@ -320,17 +320,21 @@ img {
 /* 4 · CABECERA Y MENÚ           temas de la S12, S15 y S16 */
 
 .cabecera {
+  flex-direction: column;
   display: flex;
   /* OJO: ACTIVA FLEXBOX. Se declara en el CONTENEDOR, nunca en los hijos.
      Los hijos directos —el logo y la navegación— se convierten en
      "elementos flexibles" y se colocan en fila automáticamente.       */
+
+     gap: var(--esp-sm);
+     
 
   justify-content: space-between;
   /* Controla el EJE PRINCIPAL, que con la dirección por omisión (fila)
      es el HORIZONTAL.
      space-between pega el primer elemento al inicio, el último al
      final, y reparte el sobrante en el medio. Es exactamente lo que
-     necesita una cabecera: marca a la izquierda, menú a la derecha.   */
+     necesita una cabecera: marca a la izquierda, menú a la derecha.*/
 
   align-items: center;
   /* Controla el EJE CRUZADO, que con dirección fila es el VERTICAL.
@@ -338,9 +342,9 @@ img {
      el texto del menú.
 
      OJO: RECORDAR: si la dirección fuera  column, estos dos ejes se
-       INTERCAMBIAN. Es la confusión más común de Flexbox.             */
+       INTERCAMBIAN. Es la confusión más común de Flexbox. */
 
-  padding: var(--esp-sm) var(--esp-md);
+  padding: var(--esp-sm);
   background-color: var(--color-blanco);
   border-bottom: 0.1rem solid var(--color-linea);
 
@@ -351,7 +355,7 @@ img {
 
      OJO: Se prefiere sticky sobre fixed porque NO saca el elemento del
        flujo: no hace falta compensar con un padding-top en el body.
-       Con fixed, el contenido se metería debajo de la cabecera.       */
+       Con fixed, el contenido se metería debajo de la cabecera. */
 
   z-index: 100;
   /* Decide qué elemento queda ENCIMA cuando dos se superponen: a mayor
@@ -359,7 +363,7 @@ img {
      todo el contenido al desplazar la página.
 
      OJO: z-index SOLO funciona si el elemento tiene  position  declarado.
-       En un elemento normal no hace absolutamente nada.               */
+       En un elemento normal no hace absolutamente nada. */
 }
 
 .logo {
@@ -1945,16 +1949,16 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
-@media(max-width: 768px) {
+@media(min-width: 768px) {
 
   .cabecera {
-    flex-direction: column;
+    flex-direction: row;
     /*La cebecera pasa de fila a columna*/
     gap: var(--esp-md);
   }
 
-    h1 {font-size: 3.2rem;} 
-      h2 {font-size: 2.4rem;}
+    h1 {font-size: 4.8rem;} 
+      h2 {font-size: 3.2rem;}
 
   .seccion{
     padding: var(--esp-lg) var(--esp-sm);
