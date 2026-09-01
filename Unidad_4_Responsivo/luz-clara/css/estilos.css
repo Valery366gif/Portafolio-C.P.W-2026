@@ -1946,18 +1946,19 @@ img {
         está el foco */
 
 @media(max-width: 768px) {
+
   .cabecera {
     flex-direction: column;
     /*La cebecera pasa de fila a columna*/
     gap: var(--esp-md);
   }
 
-    h1 {font-size: 3.2rem;}
+    h1 {font-size: 3.2rem;} 
       h2 {font-size: 2.4rem;}
 
   .seccion{
     padding: var(--esp-lg) var(--esp-sm);
 }
 
-
+   
 }
