@@ -13,9 +13,8 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
-    color: #233329;
-    background-color: #f4f7f4;
-    padding-top: 170px;
+    color: #2b2d42;
+    background-color: #f8f9fa;
 }
 
 .contenedor {
@@ -24,25 +23,23 @@ body {
     padding: 25px;
 }
 
-/* --- ENCABEZADOS Y TEXTO --- */
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 800;
-    color: #e2f7d5;
+    color: #ffffff;
     text-align: center;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     letter-spacing: -0.5px;
 }
 
 h2, h3 {
-    color: #1b4332;
+    color: #111827;
     margin-bottom: 12px;
     font-weight: 700;
     letter-spacing: -0.3px;
 }
 
-h2 { font-size: 2.1rem; }
-h3 { font-size: 1.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
 
 p {
     font-size: 1rem;
@@ -55,7 +52,7 @@ main p {
 }
 
 main a {
-    color: #2d6a4f;
+    color: #0d9488;
     text-decoration: none;
     font-weight: 600;
     position: relative;
@@ -63,7 +60,6 @@ main a {
     transition: color 0.3s ease;
 }
 
-/* Efecto de línea animada debajo de los enlaces */
 main a::after {
     content: '';
     position: absolute;
@@ -71,13 +67,13 @@ main a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #52b788;
+    background-color: #2dd4bf;
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 2px;
 }
 
 main a:hover {
-    color: #1b4332;
+    color: #115e59;
 }
 
 main a:hover::after {
@@ -86,56 +82,56 @@ main a:hover::after {
 
 blockquote {
     font-style: italic;
-    color: #385e49;
-    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8f3 100%);
-    border-left: 5px solid #52b788;
+    color: #134e4a;
+    background: linear-gradient(135deg, #ccfbf1 0%, #f0fdfa 100%);
+    border-left: 5px solid #14b8a6;
     padding: 16px 20px;
     border-radius: 0 12px 12px 0;
-    box-shadow: 0 4px 15px rgba(45, 106, 79, 0.05);
+    box-shadow: 0 4px 15px rgba(20, 184, 166, 0.05);
     margin: 24px 0;
 }
 
-/* --- HEADER Y MENÚ FLOTANTE --- */
 #inicio {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-image: linear-gradient(rgba(18, 38, 28, 0.65), rgba(18, 38, 28, 0.65)), url(../recursos/fondo1.jpg);
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url(../recursos/fondo1.jpg);
     background-size: cover;
     background-position: center;
-    padding: 16px 35px;
-    z-index: 100;
+    padding: 30px 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .portada-texto {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding: 18px 28px;
+    padding: 20px;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
-    gap: 12px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Botones del menú de navegación */
 header nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-decoration: none;
-    padding: 5px;
+    padding: 8px 14px;
     color: #ffffff;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.08);
@@ -143,21 +139,20 @@ header nav a {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header nav a:hover {/*hover del menu*/
-    color: #1b4332;
-    background-color: #74c69d;
-    border-color: #74c69d;
+header nav a:hover {
+    color: #0f172a;
+    background-color: #2dd4bf;
+    border-color: #2dd4bf;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(116, 198, 157, 0.4);
+    box-shadow: 0 6px 20px rgba(45, 212, 191, 0.4);
 }
 
-/* --- EFECTOS DE BOTONES PRINCIPALES --- */
 .boton, .boton-secundario {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 100%);
+    background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
     color: #ffffff;
     padding: 14px 28px;
     border: none;
@@ -168,11 +163,10 @@ header nav a:hover {/*hover del menu*/
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 0 6px 18px rgba(45, 106, 79, 0.25);
+    box-shadow: 0 6px 18px rgba(13, 148, 136, 0.25);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Brillito que cruza el botón al pasar el mouse */
 .boton::before, .boton-secundario::before {
     content: '';
     position: absolute;
@@ -191,71 +185,62 @@ header nav a:hover {/*hover del menu*/
 
 .boton:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 25px rgba(45, 106, 79, 0.4);
-    background: linear-gradient(135deg, #40916c 0%, #2d6a4f 100%);
+    box-shadow: 0 12px 25px rgba(13, 148, 136, 0.4);
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
 }
 
 .boton:active {
     transform: translateY(-1px) scale(0.99);
-    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.3);
+    box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
 }
 
 .boton:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.4);
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.4);
 }
 
-/* Variante botón secundario (Estilo Terracota/Tierra) */
 .boton-secundario {
-    background: linear-gradient(135deg, #e07a5f 0%, #d8572a 100%);
-    box-shadow: 0 6px 18px rgba(224, 122, 95, 0.25);
+    background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
+    box-shadow: 0 6px 18px rgba(249, 115, 22, 0.25);
 }
 
 .boton-secundario:hover {
-    background: linear-gradient(135deg, #f48c06 0%, #e07a5f 100%);
-    box-shadow: 0 12px 25px rgba(224, 122, 95, 0.4);
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    box-shadow: 0 12px 25px rgba(249, 115, 22, 0.4);
 }
 
-/* --- TARJETAS E INTERACTIVIDAD --- */
 .tarjeta {
     background-color: #ffffff;
     padding: 24px;
     border-radius: 16px;
-    border: 1px solid rgba(45, 106, 79, 0.08);
+    border: 1px solid rgba(13, 148, 136, 0.08);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     animation: aparecer 0.8s ease-out;
+    margin-bottom: 24px;
 }
 
 .tarjeta:hover {
     transform: translateY(-8px);
-    box-shadow: 0 18px 38px rgba(45, 106, 79, 0.12);
-    border-color: rgba(82, 183, 136, 0.3);
+    box-shadow: 0 18px 38px rgba(13, 148, 136, 0.12);
+    border-color: rgba(45, 212, 191, 0.3);
 }
 
-/* --- GALERÍA DE IMÁGENES Y EFECTOS --- */
 figure {
     background: #ffffff;
-    border: 1px solid #e0e8e2;
+    border: 1px solid #e2e8f0;
     border-radius: 14px;
     padding: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: all 0.3s ease;
+    margin-bottom: 16px;
 }
 
 .galeria-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-}
-
-.galeria-grid figure:first-of-type {
-    grid-column: span 2;
-}
-
-.destacada {
-    grid-row: span 2;
 }
 
 .galeria-grid img {
@@ -266,13 +251,11 @@ figure {
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
 }
 
-/* Efecto Zoom + Brillo suave en imágenes al pasar el mouse */
 .galeria-grid figure:hover img {
     transform: scale(1.06);
     filter: brightness(1.08) contrast(1.05);
 }
 
-/* Etiqueta animada con pulso suave */
 .figura-destacada {
     position: relative;
 }
@@ -281,22 +264,21 @@ figure {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #e07a5f 0%, #c55a11 100%);
+    background: linear-gradient(135deg, #f97316 0%, #c2410c 100%);
     color: white;
     padding: 6px 14px;
     border-radius: 30px;
     font-size: 0.85rem;
     font-weight: 700;
-    box-shadow: 0 4px 12px rgba(197, 90, 17, 0.35);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
     z-index: 10;
     animation: pulsoSuave 2.5s infinite ease-in-out;
 }
 
-/* --- FORMULARIOS ESTILIZADOS --- */
 fieldset {
     padding: 24px;
     margin-bottom: 24px;
-    border: 2px solid #d8f3dc;
+    border: 2px solid #ccfbf1;
     border-radius: 16px;
     background-color: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
@@ -305,8 +287,8 @@ fieldset {
 legend {
     padding: 4px 14px;
     font-weight: 700;
-    color: #1b4332;
-    background-color: #d8f3dc;
+    color: #115e59;
+    background-color: #ccfbf1;
     border-radius: 20px;
     font-size: 0.95rem;
 }
@@ -315,13 +297,13 @@ form label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #2d6a4f;
+    color: #0d9488;
 }
 
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
-form input[type="number"],
+form input[type="tel"],
 form input[type="date"],
 form select,
 form textarea {
@@ -336,29 +318,26 @@ form textarea {
     transition: all 0.3s ease;
 }
 
-/* Animación del foco en los campos */
 form input:focus,
 form select:focus,
 form textarea:focus {
     outline: none;
-    border-color: #52b788;
+    border-color: #2dd4bf;
     background-color: #ffffff;
-    box-shadow: 0 0 0 4px rgba(82, 183, 136, 0.18);
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.18);
     transform: translateY(-2px);
 }
 
-/* Validación suave con color */
 form input:invalid:not(:placeholder-shown) {
-    border-color: #e63946;
-    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.12);
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
 }
 
 form input:valid:not(:placeholder-shown) {
-    border-color: #2a9d8f;
-    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.12);
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
 }
 
-/* --- TABLAS MODERNAS --- */
 table {
     border-collapse: separate;
     border-spacing: 0;
@@ -369,13 +348,19 @@ table {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
+.tarjeta table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 th, td {
     padding: 14px 18px;
     text-align: left;
 }
 
 thead th {
-    background-color: #2d6a4f;
+    background-color: #0d9488;
     color: white;
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -388,27 +373,26 @@ tbody tr {
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f7faf7;
+    background-color: #f8fafc;
 }
 
 tbody tr:hover {
-    background-color: #e8f5e9;
+    background-color: #f0fdfa;
 }
 
-/* --- FOOTER --- */
 footer {
-    background: linear-gradient(135deg, #bbf5dc 0%, #47a481 100%);
-    color: #405b44;
+    background: linear-gradient(135deg, #ccfbf1 0%, #2dd4bf 100%);
+    color: #134e4a;
     padding: 32px;
     margin-top: 40px;
     border-radius: 20px 20px 0 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 20px;
 }
 
-/* --- ANIMACIONES KEYFRAMES --- */
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -423,11 +407,48 @@ footer {
 @keyframes pulsoSuave {
     0%, 100% {
         transform: scale(1);
-        box-shadow: 0 4px 12px rgba(197, 90, 17, 0.35);
+        box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
     }
     50% {
         transform: scale(1.06);
-        box-shadow: 0 8px 20px rgba(197, 90, 17, 0.5);
+        box-shadow: 0 8px 20px rgba(249, 115, 22, 0.5);
     }
 }
 
+@media (min-width: 768px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #inicio {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 35px;
+        text-align: left;
+    }
+
+    .portada-texto {
+        margin-bottom: 0;
+        max-width: 550px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .galeria-grid figure:first-of-type {
+        grid-column: span 2;
+    }
+
+    .destacada {
+        grid-row: span 2;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

@@ -51,7 +51,7 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema         | Qué aprendí                            |      Trabajo      |     Captura      |
 | :----: | :----------- | :------------------------------------- | :---------------: | :--------------: |
-|  S01   | Git y GitHub | Fundamentos de control de versiones,   | [ver](unidad-01/) | [ver](recursos/) | 
+|  S01   | Git y GitHub |Fundamentos de control de versiones,    | [ver](unidad-01/) | [ver](recursos/) | 
 |        |              |comandos esenciales (`init,add,commit   |                                      | 
 |        |              |push`) y configuración de repositorios  |                                      |
 |        |              |locales y remotos en GitHub.            |                                      |            
