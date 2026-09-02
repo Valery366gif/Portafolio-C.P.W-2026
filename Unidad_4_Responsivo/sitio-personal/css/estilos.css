@@ -486,7 +486,7 @@ audio,
   margin-bottom: 0;
 }
 
-/* Listas y tablas de datos */
+/* Listas y tablas de datos adaptadas a telefonos moviles */
 #indice-secciones ul {
   padding-left: var(--esp-md);
   list-style: disc;
@@ -528,15 +528,54 @@ audio,
   margin-bottom: var(--esp-xs);
 }
 
+/* Contenedor responsivo para que la tabla no se salga en movil */
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: var(--esp-sm);
+  margin-bottom: var(--esp-sm);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-1);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  margin-top: var(--esp-sm);
   background-color: var(--color-blanco);
+  white-space: nowrap;
+}
+
+/* Contenedor para que la tabla no se salga en movil */
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: var(--esp-sm);
+  margin-bottom: var(--esp-sm);
   border-radius: var(--radio);
-  overflow: hidden;
   box-shadow: var(--sombra-1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: var(--color-blanco);
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  table {
+    white-space: normal;
+  }
+}
+
+@media (min-width: 768px) {
+  table {
+    white-space: normal;
+  }
 }
 
 caption {
