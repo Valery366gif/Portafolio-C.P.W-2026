@@ -47,6 +47,7 @@ body {
   line-height: 1.6;
   color: var(--color-tinta);
   background-color: var(--color-fondo);
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -478,6 +479,11 @@ audio,
   padding: var(--esp-sm) 0;
 }
 
+.contenedor-svg svg {
+  max-width: 100%;
+  height: auto;
+}
+
 .descripcion-svg {
   color: var(--color-suave);
   font-size: 1.4rem;
@@ -545,31 +551,6 @@ table {
   text-align: left;
   background-color: var(--color-blanco);
   white-space: nowrap;
-}
-
-/* Contenedor para que la tabla no se salga en movil */
-.tabla-contenedor {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  margin-top: var(--esp-sm);
-  margin-bottom: var(--esp-sm);
-  border-radius: var(--radio);
-  box-shadow: var(--sombra-1);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  background-color: var(--color-blanco);
-  white-space: nowrap;
-}
-
-@media (min-width: 768px) {
-  table {
-    white-space: normal;
-  }
 }
 
 @media (min-width: 768px) {
@@ -683,4 +664,211 @@ footer#pie-pagina a:hover {
 footer#pie-pagina small {
   color: var(--color-claro);
   font-size: 1.4rem;
+}
+
+/* 
+   RESPONSIVE: TABLET Y PANTALLAS MEDIANAS (hasta 992px)
+   */
+@media (max-width: 992px) {
+  :root {
+    --esp-xl: 6.0rem;
+    --esp-lg: 3.2rem;
+  }
+
+  h1 { font-size: 4.0rem; }
+  h2 { font-size: 2.8rem; }
+
+  .contenedor,
+  .seccion,
+  .pagina-encabezado {
+    padding-left: var(--esp-sm);
+    padding-right: var(--esp-sm);
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE: TABLETS VERTICALES Y MOVILES GRANDES (hasta 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  :root {
+    --esp-xl: 4.8rem;
+    --esp-lg: 2.8rem;
+    --esp-md: 2.0rem;
+  }
+
+  h1 { font-size: 3.4rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 1.9rem; }
+
+  .contenedor,
+  .seccion,
+  .pagina-encabezado {
+    padding-left: var(--esp-sm);
+    padding-right: var(--esp-sm);
+  }
+
+  /* Encabezado y portada */
+  header#inicio {
+    min-height: 38rem;
+    padding: var(--esp-sm);
+  }
+
+  .portada-texto {
+    padding: var(--esp-sm) var(--esp-md);
+    max-width: 90%;
+  }
+
+  .portada-texto p {
+    font-size: 1.6rem;
+  }
+
+  /* Menu de navegacion: apilado y con scroll horizontal si no cabe */
+  header#inicio nav {
+    padding: var(--esp-xs);
+  }
+
+  header#inicio nav ul {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+  }
+
+  header#inicio nav ul li a {
+    padding: 1rem;
+  }
+
+  /* Tarjetas apiladas con menos relleno */
+  .tarjeta {
+    padding: var(--esp-sm);
+  }
+
+  /* Formulario y botones a ancho completo, mas facil de tocar */
+  .grupo-botones {
+    flex-direction: column;
+  }
+
+  .boton,
+  .boton-secundario {
+    width: 100%;
+  }
+
+  .campo-grupo input,
+  .campo-grupo textarea {
+    font-size: 1.6rem; /* evita zoom automatico en iOS */
+  }
+
+  /* Galeria a una columna */
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .figura-destacada {
+    grid-column: span 1;
+  }
+
+  /* Tablas: texto mas compacto dentro del contenedor con scroll */
+  th, td {
+    padding: 1rem var(--esp-xs);
+    font-size: 1.4rem;
+  }
+
+  caption {
+    font-size: 1.6rem;
+  }
+
+  blockquote {
+    padding: var(--esp-sm) var(--esp-md);
+    font-size: 1.7rem;
+    margin-left: var(--esp-xs);
+    margin-right: var(--esp-xs);
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE: MOVILES PEQUENOS (hasta 480px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  :root {
+    --esp-md: 1.6rem;
+    --esp-lg: 2.4rem;
+    --esp-xl: 3.6rem;
+  }
+
+  h1 { font-size: 2.8rem; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 1.8rem; }
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  .contenedor,
+  .seccion,
+  .pagina-encabezado {
+    padding-left: var(--esp-xs);
+    padding-right: var(--esp-xs);
+  }
+
+  header#inicio {
+    min-height: 32rem;
+  }
+
+  .portada-texto {
+    padding: var(--esp-sm);
+    max-width: 100%;
+  }
+
+  .pagina-bajada {
+    font-size: 1.6rem;
+  }
+
+  .tarjeta {
+    padding: var(--esp-sm) var(--esp-xs);
+  }
+
+  .etiqueta {
+    top: 0.6rem;
+    right: 0.6rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  blockquote {
+    font-size: 1.5rem;
+    padding: var(--esp-xs) var(--esp-sm);
+  }
+
+  footer#pie-pagina {
+    padding: var(--esp-md) var(--esp-sm);
+  }
+}
+
+/* 
+   AJUSTES ADICIONALES DE ACCESIBILIDAD Y ORIENTACION*/
+
+/* Evita que imagenes de fondo se vean "saltadas" en iOS al hacer scroll */
+@supports (-webkit-touch-callout: none) {
+  header#inicio {
+    background-attachment: scroll;
+  }
+}
+
+/* Reduce movimiento para usuarios que lo prefieren */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
