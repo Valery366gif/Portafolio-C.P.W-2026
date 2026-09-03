@@ -806,9 +806,7 @@ footer#pie-pagina small {
   }
 }
 
-/* ==========================================================================
-   RESPONSIVE: MOVILES PEQUENOS (hasta 480px)
-   ========================================================================== */
+/* RESPONSIVE: MOVILES PEQUENOS (hasta 480px) */
 @media (max-width: 480px) {
   :root {
     --esp-md: 1.6rem;
