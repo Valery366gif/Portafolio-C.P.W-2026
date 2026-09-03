@@ -1978,3 +1978,23 @@ img {
     padding: var(--esp-lg)
    }
 }
+/*MEDIA QUERIE PARA PANTALLA GRANDE*/
+@media (min-width: 768px) {
+  .cabecera {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .menu{
+  flex-direction: row;
+  gap: var(--esp-sm);
+  width: auto;
+ }
+  .menu-enlace{
+   display: inline-block;
+   padding: var(--esp-xs) var(--esp-sm);  
+   border-bottom: none;
+   border-radius: var(--radio);
+  }
+  
+}
