@@ -293,6 +293,8 @@ header#inicio nav ul li a:focus {
   transition: border-color var(--transicion), box-shadow var(--transicion);
 }
 
+
+
 .campo-grupo input:focus,
 .campo-grupo textarea:focus {
   outline: none;
@@ -300,11 +302,17 @@ header#inicio nav ul li a:focus {
   box-shadow: 0 0 0 0.4rem rgba(46,139,87,0.2);
 }
 
+
+
+
 .opciones-radio {
   display: flex;
   flex-direction: column;
   gap: var(--esp-xs);
 }
+
+
+
 
 .etiqueta-radio {
   font-weight: 700;
@@ -312,6 +320,9 @@ header#inicio nav ul li a:focus {
   display: block;
   margin-bottom: 0.4rem;
 }
+
+
+
 
 .opciones-radio label {
   font-weight: normal;
@@ -321,6 +332,9 @@ header#inicio nav ul li a:focus {
   cursor: pointer;
   color: var(--color-tinta);
 }
+
+
+
 
 .casilla-confirmacion {
   display: flex;
