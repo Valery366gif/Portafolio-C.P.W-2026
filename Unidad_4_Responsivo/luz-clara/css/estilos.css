@@ -2038,6 +2038,20 @@ img {
   }
 
 }
+
+
+/*LAS CONSULTAS DISPONIBLES
+@media (min-width: 768px)  ancho minimo
+@media (max-width: 767px)  ancho maximo
+@media (min-height: 600px)  alto minimo
+@media (orientation: portait)  orientacion vertical
+@media (orientation: landscape)  orientacion horizontal
+@media print  para impresion de la pagina
+@media (prefers-reduced-motion) preferencia de movimiento 
+@media (prefers-color-scheme: dark)  preferencia de color oscuro
+*/
+
+
 @media print{
   .cabecera, .menu, .pie
   .boton,
