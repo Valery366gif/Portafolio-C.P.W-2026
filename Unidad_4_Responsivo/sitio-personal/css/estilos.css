@@ -6,7 +6,7 @@
   --color-marca:       #1E4D2B;
   --color-acento:      #2E8B57;
   --color-acento-osc:  #14522B;
-  --color-claro:       #E8F5E9;
+  --color-claro:       #e0ead7;
   --color-fondo:       #F4F9F4;
   --color-fondo-alt:   #E2EFE2;
   --color-linea:       #C8DCC8;
@@ -239,7 +239,7 @@ header#inicio nav ul li a:focus {
   border-top: 0.4rem solid var(--color-acento);
   transition: transform var(--transicion), box-shadow var(--transicion);
 }
-
+/*hover de texto*/
 .tarjeta:hover {
   transform: translateY(-0.4rem);
   box-shadow: var(--sombra-3);
@@ -252,8 +252,8 @@ header#inicio nav ul li a:focus {
 }
 
 .consejo {
-  background-color: var(--color-claro);
-  border-left: 0.6rem solid var(--color-acento);
+  background-color: var( --color-linea);
+  border-left: 0.6rem solid var(--color-tinta);
   border-top: none;
 }
 
