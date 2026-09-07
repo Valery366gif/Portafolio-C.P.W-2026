@@ -953,6 +953,16 @@ img {
   font-style: italic;
 }
 
+/*base .teléfono. una columna. Layout Shifhter*/
+#historia .dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "imagen"
+                        'texto";';
+  gap: var(--esp-md);                      
+ /*en el movil la imagen va arriba, Una foto capta la atencion */
+}
+
 
 /* 10 · LISTAS Y GLOSARIO           tema de la S14 */
 
