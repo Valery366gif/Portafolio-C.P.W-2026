@@ -561,20 +561,20 @@ img {
 .portada-caja {
   background-color: rgba(0, 0, 0, 0.45);
   /* rgba tiene CUATRO valores: rojo, verde, azul y la OPACIDAD, que va
-     de 0 (invisible) a 1 (sólido).
+       de 0 (invisible) a 1 (sólido).
 
      OJO: LA DIFERENCIA CON  opacity:
          background-color: rgba(0,0,0,.45)  -> solo el FONDO se
-             transparenta; el texto encima se ve nítido  <- lo que se busca
+      transparenta; el texto encima se ve nítido  <- lo que se busca
          opacity: 0.45                      -> TODO el elemento se
-             transparenta, incluido el texto, que quedaría desvaído
+      transparenta, incluido el texto, que quedaría desvaído
 
      Esta capa oscura es lo que garantiza que el texto blanco se lea
-     sobre una fotografía que puede tener zonas claras.                */
+     sobre una fotografía que puede tener zonas claras.*/
 
   padding: var(--esp-lg);
   border-radius: var(--radio);
-  max-width: 70rem;   /* 700px */
+  max-width: 70rem;   /*700px*/
 }
 
 .portada-titulo {
