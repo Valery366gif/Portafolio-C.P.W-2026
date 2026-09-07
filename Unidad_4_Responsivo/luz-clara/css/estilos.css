@@ -962,6 +962,9 @@ img {
   gap: var(--esp-md);                      
  /*en el movil la imagen va arriba, Una foto capta la atencion */
 }
+#historia .columna-texto {grid-area: texto;}
+#historia .columna-imagen {grid-area: imagen;}
+
 
 
 /* 10 · LISTAS Y GLOSARIO           tema de la S14 */
@@ -2293,6 +2296,23 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
     /*la tercera tarjeta ocupa el ancho completo. Es una decision estética porque se ve mejor una tarjeta ancha que agosta y sola*/
   }
 }
+/*base .tablas. dos columnas . Layout Shir*/
+@media (max-width: 768px) {
+  #historia .dos-columnas {
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "texto imagen";
+  }
+  }
+
+  /*base. escritorio. layout Shifter. imagen a la izquierda*/
+
+  @media (max-width: 1200px) {
+  #historia .dos-columnas {
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: "imagen texto";
+  }
+    /*La imagen cambia de lado, sin encoger o bajar */
+  }
 
 
 
