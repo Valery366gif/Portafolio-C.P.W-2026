@@ -238,7 +238,7 @@ _(Escribir al cerrar el módulo, en la sesión 36. Tres preguntas para orientarl
 
 <div align="center" markdown="1">
 
-**Nombre Completo** · correo@ejemplo.com
+**Nombre Completo** · acevedovalery985@gmail.com
 
 Portafolio elaborado durante el módulo CSTI12002 · Instituto Nacional de Aprendizaje · 2026
 
