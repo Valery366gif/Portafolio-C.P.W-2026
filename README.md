@@ -92,12 +92,12 @@ Portafolio-Codificación de Páginas Web/
 |        |                            |formatos de color (HEX, RGB, HSL).                                                         |
 |  S14   | Modelo de cajas            | Control de `content`, `padding`, `border`, `margin` y uso de `box-sizing: border-box`     | [ver](unidad-03/) | [ver](recursos/) |
 |        |                            |par el cálculo correcto de dimensiones.                                                    |
-|  S15   | Display y posicionamiento  |Comportamiento de flujo (`block,inline,inline-block,none`) y esquemas de posicionamiento   | [ver](unidad-03/)|  [ver](recursos/) |
-|        |                            |(`static,relative,absolute, fixed,sticky`).                                                |
-|  S16   | Flexbox                    |                                                                                           |
-|        |                            |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
-|  S17   | CSS Grid                   |                                                                                           |
-|        |                            |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
+|  S15   | Display y posicionamiento  |Comportamiento de flujo (`block,inline,inline-block,none`) y esquemas de posicionamiento   | [ver](unidad-03/)|  [ver](recursos/) |                         |(`static,relative,absolute, fixed,sticky`). 
+|        |                            |                                                                                           |
+|  S16   | Flexbox                    |Uso de contenedores flexibles, ejes principal y secundario, alineación, distribución de    |
+|        |                            |y propiedades(flex-basis, flex-shrink, flex-basis).                                        |[ver](unidad-03/) |[ver](recursos/) |
+|  S17   | CSS Grid                   | Creación de rejillas bidimensionales, definición de filas y columnas con grid-template    |
+|        |                            | , unidades fraccionales (fr) y posicionamiento de áreas.                                  | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |                                                                                           |
 |        |                            |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |                                                                                           |
