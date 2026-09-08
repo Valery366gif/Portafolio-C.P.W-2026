@@ -110,35 +110,24 @@
       </ul>
     </section>
 
-    <!--Patron off canvas -->
-    <!--La idea del patron, es generar un contenido segundario que en pantalla ancha se ve seiempre y en pantalla pequeña 
-  vive fuera de la vista y entra al pedirlo-->
-  <input type="checkbox" id="abrir-filtros" class="cpanel-control">
-   <label for="abrir-filtros" class="panel-boton">
-    filtros por categoría
-  </label>
+  <!--Patron Off canvas-->
+  <!--La idea del patrón, es generar un contenido secundario que en pantalla ancha se ve siempre, y en pantalkla pequeña vive fuera de la vista y entra al pedilrlo-->
 
-    <aside id="panel-lateral" class="filtros">
-      <h2 class="panel-titulo">Categoría</h2>
-      <ul class="panel-lista">
-        <li><a href="#mosaico" class="panel-enlace">Todo el trabajo</a></li>
-        <li><a href="#retrato" class="panel-enlace">Retrato</a></li>
-        <li><a href="#producto" class="panel-enlace">Producto</a></li>
-        <li><a href="#eventos" class="panel-enlace">Eventos</a></li>
-      </ul>
-      <label for="abrir-filtros" class="panel-cerrar">Cerrar</label>
-    </aside>
+  <input type="checkbox" id="abrir-filtros" class="panel-control">
 
+  <label for="abrir-filtros" class="panel-boton">Filtrar por categoría</label>
+  <label for="abrir-filtros" class="panel-fondo"></label> <!--Falta-->
 
-
-    
-      <ul class="panel-lista">
-        <li><a href="#mosaico" class="panel-enlace">Todo el trabajo</a></li>
-        <li><a href="#retrato" class="panel-enlace">Retrato</a></li>
-        <li><a href="#producto" class="panel-enlace">Producto</a></li>
-        <li><a href="#eventos" class="panel-enlace">Eventos</a></li>
-      </ul>
-
+  <aside class="panel-lateral" id="filtros">
+    <h2 class="panel-titulo">Categorías</h2>
+    <ul class="panel-lista">
+      <li><a href="#mosaico" class="panel-enlace">Todo el trabajo</a></li>
+      <li><a href="#retrato" class="panel-enlace">Retrato</a></li>
+      <li><a href="#producto" class="panel-enlace">Producto</a></li>
+      <li><a href="#eventos" class="panel-enlace">Eventos</a></li>
+    </ul>
+    <label for="abrir-filtros" class="panel-cerrar">Cerrar</label>
+  </aside>
 
     <!-- MOSAICO PRINCIPAL · CSS GRID con piezas de distinto tamaño
          Es la pieza central de esta página -->
@@ -193,7 +182,7 @@
               <source media="(min-width :1024)" srcset="recursos/g-05-grande.jpg">
               <source media="(min-width :768)" srcset="recursos/g-5-mediana.png">
               <source media="(min-width :468)" srcset="recursos/g-5-pequena.png">
-            <img src="recursos/g-05.jpg" alt="Vista general de un salón durante una celebración al atardecer"
+            <img src="recursos/g-5-pequena.png" alt="Vista general de un salón durante una celebración al atardecer"
                 width="1200" height="1200" loading="lazy">
             </picture>
           <figcaption class="pieza-info">
