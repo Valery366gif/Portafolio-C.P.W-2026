@@ -85,8 +85,7 @@ Portafolio-Codificación de Páginas Web/
 
 | Sesión | Tema                       | Qué aprendí                                                                               | Trabajo           |     Captura      |
 | :----: | :------------------------- | :---------------------------------------------------------------------------------------- | :---------------: | :--------------: |
-|  S11   | Introducción a CSS | Sintaxis básica de CSSmétodos para vincular hojas de estilo (`<link>`, interno e inline) y        | [ver](unidad-03/) | [ver](recursos/) |
-|        |                     |concepto de cascada y especificidad.                                                              |
+|  S11   | Introducción a CSS | Sintaxis básica de CSSmétodos para vincular hojas de estilo (`<link>`, interno e inline) y        | [ver](unidad-03/) | [ver](recursos/) |                 |concepto de cascada y especificidad.                                                               |
 |  S12   | Selectores y pseudo-clases | Selectores básicos (etiqueta, clase, ID), combinadores y pseudo-clases para estados       | [ver](unidad-03/) | [ver](recursos/) |
 |        |                            |interactivos (`:hover`, `:focus`, `:active`).                                              |
 |  S13   | Tipografía y color         |Aplicación de fuentes web (Google Fonts), jerarquía tipográfica, propiedades de texto y    | [ver](unidad-03/) | [ver](recursos/) |
