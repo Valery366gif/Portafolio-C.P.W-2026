@@ -97,7 +97,7 @@ Portafolio-Codificación de Páginas Web/
 |  S16   | Flexbox                    |Uso de contenedores flexibles, ejes principal y secundario, alineación, distribución de    |
 |        |                            |y propiedades(flex-basis, flex-shrink, flex-basis).                                        |[ver](unidad-03/) |[ver](recursos/) |
 |  S17   | CSS Grid                   | Creación de rejillas bidimensionales, definición de filas y columnas con grid-template    |
-|        |                              , unidades fraccionales (fr) y posicionamiento de áreas.                                   | [ver](unidad-03/) | [ver](recursos/) |
+|        |                            |, unidades fraccionales (fr) y posicionamiento de áreas.                                  | [ver](unidad-03/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |                                                                                           |
 |        |                            |                                                                                           | [ver](unidad-03/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |                                                                                           |
